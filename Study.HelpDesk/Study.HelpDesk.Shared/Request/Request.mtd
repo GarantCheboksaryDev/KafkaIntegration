@@ -11,6 +11,39 @@
     "Buttons": [],
     "IsAncestorMetadata": true
   },
+  "EntityStyleSelectors": [
+    {
+      "NameGuid": "e6b8529d-764a-4ea7-a1b5-cd11ef1b1c12",
+      "Name": "ClosedStyle",
+      "Conditions": [
+        {
+          "NameGuid": "2637df77-4351-4926-bbac-8d2cb8c3c64e",
+          "LeftSideGuid": "505658d4-1e30-4d1f-a371-c96ec380cdce",
+          "RightSide": "Closed"
+        }
+      ],
+      "Style": {
+        "NameGuid": "fb498314-5578-465c-b306-047659ba9e9a",
+        "IsStrikethrough": true
+      }
+    },
+    {
+      "NameGuid": "46eee2c3-ce27-4c6e-a5ca-0f9e8f24a2a9",
+      "Name": "NewCreatedStyle",
+      "Conditions": [
+        {
+          "NameGuid": "a425d6f9-6dab-42f8-befb-7df08c3d701e",
+          "LeftSideGuid": "bc134e44-acc2-4a24-9629-f921d8903447",
+          "RightSide": "Today"
+        }
+      ],
+      "PreviousStyleSelectorGuid": "e6b8529d-764a-4ea7-a1b5-cd11ef1b1c12",
+      "Style": {
+        "NameGuid": "4aaba4b1-9738-45c6-9e5e-9332814a06a7",
+        "ForegroundBrushName": "MagentaEntityColor"
+      }
+    }
+  ],
   "ExtraSearchProperties": [],
   "FilterPanel": {
     "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
@@ -244,6 +277,16 @@
   ],
   "Properties": [
     {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1dcedc29-5140-4770-ac92-eabc212326a1",
+      "Name": "Status",
+      "IsAncestorMetadata": true,
+      "IsLoadEagerly": true,
+      "Overridden": [
+        "IsLoadEagerly"
+      ]
+    },
+    {
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "d8f5258b-11aa-4f73-860a-8dc3d9c6aff3",
       "Name": "Theme",
@@ -277,6 +320,7 @@
       "NameGuid": "bc134e44-acc2-4a24-9629-f921d8903447",
       "Name": "CreatedDate",
       "Code": "CreatedDate",
+      "IsLoadEagerly": true,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
       "PreviousPropertyGuid": "0f7415cb-f956-486e-8966-0faa0af91467"
@@ -296,6 +340,7 @@
       "Code": "RequestKind",
       "EntityGuid": "158003a9-501f-4804-ae2a-1509f3b97431",
       "FlatListInStandaloneLookup": true,
+      "IsLoadEagerly": true,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
       "PreviousPropertyGuid": "89147cf1-afff-4639-86d1-eda2a8b5eca5"
@@ -328,10 +373,11 @@
         },
         {
           "NameGuid": "b5e6ab62-3f25-4a24-b1cf-03e71f4b9c5d",
-          "Name": "Colsed",
+          "Name": "Closed",
           "Code": "Colsed"
         }
       ],
+      "IsLoadEagerly": true,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
       "PreviousPropertyGuid": "9780cd05-16be-412a-b4b1-f20053082578"

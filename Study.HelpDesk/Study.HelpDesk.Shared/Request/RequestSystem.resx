@@ -97,7 +97,7 @@
   <data name="Enum_LifeCycle_OnControl" xml:space="preserve">
     <value>On control</value>
   </data>
-  <data name="Enum_LifeCycle_Colsed" xml:space="preserve">
+  <data name="Enum_LifeCycle_Closed" xml:space="preserve">
     <value>Closed</value>
   </data>
   <data name="Property_Result" xml:space="preserve">
