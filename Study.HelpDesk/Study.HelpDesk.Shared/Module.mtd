@@ -1,0 +1,76 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "fd1d01cd-d1d1-482a-88c4-43cfc834fcf7",
+  "Name": "HelpDesk",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "Study.HelpDesk.Client",
+  "ClientBaseAssemblyName": "Study.HelpDesk.ClientBase",
+  "ClientBaseNamespace": "Study.HelpDesk.ClientBase",
+  "ClientNamespace": "Study.HelpDesk.Client",
+  "Code": "HelpDes",
+  "CompanyCode": "Study",
+  "Cover": {
+    "NameGuid": "66286c6a-f93c-44da-b4a5-3d0d01e372d1",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "4f25b1d2-63fd-415b-83d7-d2cceefc41ef",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "000349fe-41e3-4062-b5d8-7d9bba8042b1",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "0e1b4b26-ffeb-4513-8ced-d9cbb79f8d69",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "158003a9-501f-4804-ae2a-1509f3b97431"
+    },
+    {
+      "ItemId": "657099a3-0a10-47c4-8d56-9909b6f4ba5e",
+      "PreviousItemId": "158003a9-501f-4804-ae2a-1509f3b97431"
+    },
+    {
+      "ItemId": "59450db8-c4f3-451e-9d51-14e1b4118555",
+      "PreviousItemId": "657099a3-0a10-47c4-8d56-9909b6f4ba5e"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "Study.HelpDesk",
+  "IsolatedAssemblyName": "Study.HelpDesk.Isolated",
+  "IsolatedNamespace": "Study.HelpDesk.Isolated",
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "Study.HelpDesk",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "Study.HelpDesk.Server",
+  "ServerNamespace": "Study.HelpDesk.Server",
+  "SharedAssemblyName": "Study.HelpDesk.Shared",
+  "SharedNamespace": "Study.HelpDesk.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.0",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}
