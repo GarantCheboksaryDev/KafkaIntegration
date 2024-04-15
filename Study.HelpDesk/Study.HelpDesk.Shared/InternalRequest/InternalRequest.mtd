@@ -68,6 +68,9 @@
   "IconResourcesKeys": [],
   "IntegrationServiceName": "HelpDeskInternalRequest",
   "OperationsClass": "",
+  "Overridden": [
+    "IsVisible"
+  ],
   "Properties": [
     {
       "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
