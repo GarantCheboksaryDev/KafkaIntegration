@@ -14,7 +14,9 @@ namespace Study.HelpDesk
     {
       _obj.Number = _obj.Id;
       _obj.Responsible = Sungero.Company.Employees.Current;
+      _obj.LifeCycle = LifeCycle.InWork;
+      _obj.CreatedDate = Calendar.Today;
     }
-  }
 
+  }
 }
