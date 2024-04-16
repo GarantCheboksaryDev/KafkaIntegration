@@ -112,4 +112,10 @@
   <data name="ControlGroup_38d225dffe054acd850f0135e0d6d0bc" xml:space="preserve">
     <value>Общая информация</value>
   </data>
+  <data name="Property_RequestCollection" xml:space="preserve">
+    <value>Обращения</value>
+  </data>
+  <data name="Property_SumHours" xml:space="preserve">
+    <value>Сумма часов</value>
+  </data>
 </root>

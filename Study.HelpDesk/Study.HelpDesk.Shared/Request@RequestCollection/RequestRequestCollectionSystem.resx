@@ -58,70 +58,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Property_Theme" xml:space="preserve">
-    <value>Theme</value>
+  <data name="Property_Date" xml:space="preserve">
+    <value>Date</value>
   </data>
-  <data name="DisplayName" xml:space="preserve">
-    <value>Request</value>
+  <data name="Property_Employee" xml:space="preserve">
+    <value>Emplyee</value>
   </data>
-  <data name="AccusativeDisplayName" xml:space="preserve">
-    <value>Request</value>
-  </data>
-  <data name="CollectionDisplayName" xml:space="preserve">
-    <value>Requests</value>
-  </data>
-  <data name="Property_Number" xml:space="preserve">
-    <value>Number</value>
-  </data>
-  <data name="Property_Deskription" xml:space="preserve">
-    <value>Deskription</value>
-  </data>
-  <data name="Property_CreatedDate" xml:space="preserve">
-    <value>Created date</value>
-  </data>
-  <data name="Property_ClosedDate" xml:space="preserve">
-    <value>Closed date</value>
-  </data>
-  <data name="Property_RequestKind" xml:space="preserve">
-    <value>Request kind</value>
-  </data>
-  <data name="Property_Responsible" xml:space="preserve">
-    <value>Responsible</value>
-  </data>
-  <data name="Property_LifeCycle" xml:space="preserve">
-    <value>Life cycle</value>
-  </data>
-  <data name="Enum_LifeCycle_InWork" xml:space="preserve">
-    <value>In work</value>
-  </data>
-  <data name="Enum_LifeCycle_OnControl" xml:space="preserve">
-    <value>On control</value>
-  </data>
-  <data name="Enum_LifeCycle_Closed" xml:space="preserve">
-    <value>Closed</value>
-  </data>
-  <data name="Property_Result" xml:space="preserve">
-    <value>Result</value>
-  </data>
-  <data name="Property_Communication" xml:space="preserve">
-    <value>Communication</value>
-  </data>
-  <data name="ControlGroup_bccedf9114b1439b83490dc617974f52" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ControlGroup_76fcd2738819488fa0b2bcc5a9e9358d" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ControlGroup_38d225dffe054acd850f0135e0d6d0bc" xml:space="preserve">
-    <value>Information</value>
-  </data>
-  <data name="ControlGroup_d7535af8660c4877bd0c3e50a33dd350" xml:space="preserve">
-    <value>Communication</value>
-  </data>
-  <data name="Property_RequestCollection" xml:space="preserve">
-    <value>Requests</value>
-  </data>
-  <data name="Property_SumHours" xml:space="preserve">
-    <value>Sum hours</value>
+  <data name="Property_CountTime" xml:space="preserve">
+    <value>Count time</value>
   </data>
 </root>

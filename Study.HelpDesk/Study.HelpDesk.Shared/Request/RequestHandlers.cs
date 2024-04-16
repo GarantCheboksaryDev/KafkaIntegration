@@ -7,8 +7,12 @@ using Study.HelpDesk.Request;
 
 namespace Study.HelpDesk
 {
-  partial class RequestSharedHandlers
+  partial class RequestRequestCollectionSharedCollectionHandlers
   {
 
+    public virtual void RequestCollectionAdded(Sungero.Domain.Shared.CollectionPropertyAddedEventArgs e)
+    {
+       
+    }
   }
 }

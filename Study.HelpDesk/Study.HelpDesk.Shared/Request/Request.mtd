@@ -13,21 +13,6 @@
   },
   "EntityStyleSelectors": [
     {
-      "NameGuid": "e6b8529d-764a-4ea7-a1b5-cd11ef1b1c12",
-      "Name": "ClosedStyle",
-      "Conditions": [
-        {
-          "NameGuid": "2637df77-4351-4926-bbac-8d2cb8c3c64e",
-          "LeftSideGuid": "505658d4-1e30-4d1f-a371-c96ec380cdce",
-          "RightSide": "Closed"
-        }
-      ],
-      "Style": {
-        "NameGuid": "fb498314-5578-465c-b306-047659ba9e9a",
-        "IsStrikethrough": true
-      }
-    },
-    {
       "NameGuid": "46eee2c3-ce27-4c6e-a5ca-0f9e8f24a2a9",
       "Name": "NewCreatedStyle",
       "Conditions": [
@@ -37,10 +22,25 @@
           "RightSide": "Today"
         }
       ],
-      "PreviousStyleSelectorGuid": "e6b8529d-764a-4ea7-a1b5-cd11ef1b1c12",
       "Style": {
         "NameGuid": "4aaba4b1-9738-45c6-9e5e-9332814a06a7",
         "ForegroundBrushName": "MagentaEntityColor"
+      }
+    },
+    {
+      "NameGuid": "15de49ae-9359-497d-8c9f-8ace384f0bf6",
+      "Name": "ClosedStyle",
+      "Conditions": [
+        {
+          "NameGuid": "b9fa7a97-f603-45e8-849f-fd5927205422",
+          "LeftSideGuid": "505658d4-1e30-4d1f-a371-c96ec380cdce",
+          "RightSide": "Closed"
+        }
+      ],
+      "PreviousStyleSelectorGuid": "46eee2c3-ce27-4c6e-a5ca-0f9e8f24a2a9",
+      "Style": {
+        "NameGuid": "531fabbc-04d0-4999-b276-3060dd23239d",
+        "IsStrikethrough": true
       }
     }
   ],
@@ -63,10 +63,10 @@
           "Name": "ControlGroup",
           "ColumnDefinitions": [
             {
-              "Percentage": 53.79
+              "Percentage": 54.28
             },
             {
-              "Percentage": 45.3
+              "Percentage": 45.72
             }
           ]
         },
@@ -267,6 +267,9 @@
       ]
     }
   ],
+  "HandledEvents": [
+    "CreatedServer"
+  ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "HelpDeskRequest",
   "IsAbstract": true,
@@ -301,6 +304,7 @@
       "NameGuid": "61fb487a-4273-4050-b592-d9e3b60f8c80",
       "Name": "Number",
       "Code": "Number",
+      "IsEnabled": false,
       "IsRequired": true,
       "IsUnique": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
@@ -372,9 +376,9 @@
           "Code": "OnControl"
         },
         {
-          "NameGuid": "b5e6ab62-3f25-4a24-b1cf-03e71f4b9c5d",
+          "NameGuid": "d273b75c-029b-4933-a514-f9b5e57ef874",
           "Name": "Closed",
-          "Code": "Colsed"
+          "Code": "Closed"
         }
       ],
       "IsLoadEagerly": true,
@@ -397,6 +401,29 @@
       "Code": "Communication",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "0725bf0b-b908-46fc-a13e-6c4219ed4092"
+    },
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "cdcca491-5b33-438d-a1ca-717fab1ae28f",
+      "Name": "RequestCollection",
+      "Code": "RequestRequest",
+      "EntityGuid": "c3a6c4d4-098c-4747-8511-9cf7b703ef97",
+      "HandledEvents": [
+        "AddedShared"
+      ],
+      "IsShowedInList": false,
+      "PreviousPropertyGuid": "80a19af8-c696-455f-b1b9-b281c6ccc0a9"
+    },
+    {
+      "$type": "Sungero.Metadata.DoublePropertyMetadata, Sungero.Metadata",
+      "NameGuid": "65d28f85-b8ea-4873-a5d6-7cfc024c7046",
+      "Name": "SumHours",
+      "Code": "SumHours",
+      "HandledEvents": [
+        "ValueInputClient"
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
+      "PreviousPropertyGuid": "cdcca491-5b33-438d-a1ca-717fab1ae28f"
     }
   ],
   "PublicStructures": [],

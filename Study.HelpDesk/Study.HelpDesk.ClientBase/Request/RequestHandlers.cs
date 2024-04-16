@@ -10,5 +10,10 @@ namespace Study.HelpDesk
   partial class RequestClientHandlers
   {
 
+    public virtual void SumHoursValueInput(Sungero.Presentation.DoubleValueInputEventArgs e)
+    {
+      
+    }
+
   }
 }
