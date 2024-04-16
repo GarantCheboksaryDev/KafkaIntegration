@@ -268,7 +268,9 @@
     }
   ],
   "HandledEvents": [
-    "CreatedServer"
+    "CreatedServer",
+    "BeforeSaveServer",
+    "RefreshClient"
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "HelpDeskRequest",
@@ -420,9 +422,6 @@
       "NameGuid": "65d28f85-b8ea-4873-a5d6-7cfc024c7046",
       "Name": "SumHours",
       "Code": "SumHours",
-      "HandledEvents": [
-        "ValueInputClient"
-      ],
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.NumericEditorToIntAndDoubleBinder",
       "PreviousPropertyGuid": "cdcca491-5b33-438d-a1ca-717fab1ae28f"
     }
@@ -434,7 +433,16 @@
     "Name": "RibbonCard",
     "Categories": [],
     "Elements": [],
-    "Groups": [],
+    "Groups": [
+      {
+        "NameGuid": "79400beb-f24d-4649-9d40-f90529e849a7",
+        "Name": "Group",
+        "IconName": null,
+        "Index": 21,
+        "ParentGuid": "21a31627-5f58-4416-8c4a-90f538ee2e57",
+        "SmallIconName": null
+      }
+    ],
     "IsAncestorMetadata": true,
     "Pages": [],
     "RibbonKind": "Card"
