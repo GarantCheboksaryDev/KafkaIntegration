@@ -157,4 +157,19 @@
   <data name="Action_CreateAddendumDocumentConfirmationDescription" xml:space="preserve">
     <value />
   </data>
+  <data name="Action_ShowAddendumRequests" xml:space="preserve">
+    <value>Показать приложения к обращению</value>
+  </data>
+  <data name="Action_ShowAddendumRequestsDescription" xml:space="preserve">
+    <value>При нажатии открывается список приложений к обращению.</value>
+  </data>
+  <data name="Action_ShowAddendumRequestsHint" xml:space="preserve">
+    <value>Показывает приложения к обращению.</value>
+  </data>
+  <data name="Action_ShowAddendumRequestsConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowAddendumRequestsConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
 </root>

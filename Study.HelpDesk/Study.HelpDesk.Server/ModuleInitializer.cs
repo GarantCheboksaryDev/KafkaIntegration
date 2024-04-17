@@ -24,6 +24,9 @@ namespace Study.HelpDesk.Server
       var allUsers = Roles.AllUsers;
       Requests.AccessRights.Grant(allUsers, DefaultAccessRightsTypes.Read);
       Requests.AccessRights.Save();
+      // Добавить тип документа SupportContract в справочник DocumentType,
+      // как документ договорного документопотока.
+      Sungero.Docflow.PublicInitializationFunctions.Module.CreateDocumentType("Договор на сопровождение", SupportContract.ClassTypeGuid,Sungero.Docflow.DocumentType.DocumentFlow.Contracts,true);
     }
   }
 
