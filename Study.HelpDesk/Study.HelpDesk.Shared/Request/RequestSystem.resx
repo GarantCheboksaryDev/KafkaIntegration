@@ -142,4 +142,19 @@
   <data name="Ribbon_Group_79400bebf24d46499d40f90529e849a7" xml:space="preserve">
     <value>Group</value>
   </data>
+  <data name="Action_CreateAddendumDocument" xml:space="preserve">
+    <value>Создать приложение к обращению</value>
+  </data>
+  <data name="Action_CreateAddendumDocumentDescription" xml:space="preserve">
+    <value>При нажатии открывается карточка создания приложения к обращению</value>
+  </data>
+  <data name="Action_CreateAddendumDocumentHint" xml:space="preserve">
+    <value>Создать приложение к обращению.</value>
+  </data>
+  <data name="Action_CreateAddendumDocumentConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_CreateAddendumDocumentConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
 </root>

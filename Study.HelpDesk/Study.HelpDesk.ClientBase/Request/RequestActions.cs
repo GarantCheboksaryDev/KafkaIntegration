@@ -9,6 +9,16 @@ namespace Study.HelpDesk.Client
 {
   partial class RequestActions
   {
+    public virtual void CreateAddendumDocument(Sungero.Domain.Client.ExecuteActionArgs e)
+    {
+      Functions.Request.Remote.CreateAddendumRequest(_obj).Show();
+    }
+
+    public virtual bool CanCreateAddendumDocument(Sungero.Domain.Client.CanExecuteActionArgs e)
+    {
+      return true;
+    }
+
     public virtual void OpenRequest(Sungero.Domain.Client.ExecuteActionArgs e)
     {
       _obj.State.IsEnabled = true;

@@ -12,6 +12,7 @@ namespace Study.HelpDesk
 
     public override void BeforeSave(Sungero.Domain.BeforeSaveEventArgs e)
     {
+      Functions.Request.RequestThemeEditor(_obj);
       if(_obj.ClosedDate == null && _obj.LifeCycle == LifeCycle.Closed)
         _obj.ClosedDate = Calendar.Today;
       if(_obj.LifeCycle == LifeCycle.Closed && string.IsNullOrEmpty(_obj.Result))
@@ -24,6 +25,7 @@ namespace Study.HelpDesk
       _obj.Responsible = Sungero.Company.Employees.Current;
       _obj.LifeCycle = LifeCycle.InWork;
       _obj.CreatedDate = Calendar.Today;
+      _obj.Theme = "Тема будет сформирована автоматически";
     }
 
   }

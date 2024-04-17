@@ -2,10 +2,19 @@
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
   "NameGuid": "657099a3-0a10-47c4-8d56-9909b6f4ba5e",
   "Name": "Request",
+  "AccessRightsMode": "Both",
   "Actions": [
     {
       "NameGuid": "43f76ac0-49e3-42b9-ae2c-a56f316437d2",
       "Name": "OpenRequest",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": null,
+      "SmallIconName": null
+    },
+    {
+      "NameGuid": "5f09fd71-c775-41a1-9dd0-5e5fb3e5fdec",
+      "Name": "CreateAddendumDocument",
       "ActionArea": "Card",
       "GenerateHandler": true,
       "LargeIconName": null,
@@ -286,9 +295,10 @@
   "IntegrationServiceName": "HelpDeskRequest",
   "IsAbstract": true,
   "IsVisible": false,
-  "OperationsClass": "",
+  "OperationsClass": "RequestOperations",
   "Overridden": [
-    "IsVisible"
+    "IsVisible",
+    "AccessRightsMode"
   ],
   "Properties": [
     {
@@ -307,6 +317,7 @@
       "Name": "Theme",
       "Code": "Theme",
       "IsDisplayValue": true,
+      "IsEnabled": false,
       "IsQuickSearchAllowed": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "1dcedc29-5140-4770-ac92-eabc212326a1"
@@ -316,6 +327,9 @@
       "NameGuid": "61fb487a-4273-4050-b592-d9e3b60f8c80",
       "Name": "Number",
       "Code": "Number",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
       "IsEnabled": false,
       "IsRequired": true,
       "IsUnique": true,
@@ -327,6 +341,9 @@
       "NameGuid": "0f7415cb-f956-486e-8966-0faa0af91467",
       "Name": "Deskription",
       "Code": "Deskription",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "61fb487a-4273-4050-b592-d9e3b60f8c80"
@@ -336,6 +353,9 @@
       "NameGuid": "bc134e44-acc2-4a24-9629-f921d8903447",
       "Name": "CreatedDate",
       "Code": "CreatedDate",
+      "HandledEvents": [
+        "ChangedShared"
+      ],
       "IsLoadEagerly": true,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
@@ -356,6 +376,9 @@
       "Code": "RequestKind",
       "EntityGuid": "158003a9-501f-4804-ae2a-1509f3b97431",
       "FlatListInStandaloneLookup": true,
+      "HandledEvents": [
+        "ChangedShared"
+      ],
       "IsLoadEagerly": true,
       "IsRequired": true,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
@@ -450,6 +473,15 @@
         "ActionGuid": "43f76ac0-49e3-42b9-ae2c-a56f316437d2",
         "ButtonSize": "Large",
         "Index": -1,
+        "ParentGuid": "79400beb-f24d-4649-9d40-f90529e849a7"
+      },
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "61e6473d-729e-4c42-b5fc-2034aaa18179",
+        "Name": "CreateAddendumDocument",
+        "ActionGuid": "5f09fd71-c775-41a1-9dd0-5e5fb3e5fdec",
+        "ButtonSize": "Large",
+        "Index": 0,
         "ParentGuid": "79400beb-f24d-4649-9d40-f90529e849a7"
       }
     ],

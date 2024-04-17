@@ -2,6 +2,7 @@
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
   "NameGuid": "79ab6ec2-f5a4-47a9-ad4e-e1644b687836",
   "Name": "ExternalRequest",
+  "AccessRightsMode": "Both",
   "BaseGuid": "657099a3-0a10-47c4-8d56-9909b6f4ba5e",
   "CanBeNavigationPropertyType": true,
   "CreationAreaMetadata": {

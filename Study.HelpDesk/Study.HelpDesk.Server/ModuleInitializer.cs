@@ -7,4 +7,24 @@ using Sungero.Domain.Initialization;
 
 namespace Study.HelpDesk.Server
 {
+  public partial class ModuleInitializer
+  {
+
+    public override void Initializing(Sungero.Domain.ModuleInitializingEventArgs e)
+    {
+      CreateDefaultPurchaseKind();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private static void CreateDefaultPurchaseKind()
+    {
+      InitializationLogger.Debug("Выданы права на чтение справочника обращений всем пользователям.");
+      var allUsers = Roles.AllUsers;
+      Requests.AccessRights.Grant(allUsers, DefaultAccessRightsTypes.Read);
+      Requests.AccessRights.Save();
+    }
+  }
+
 }

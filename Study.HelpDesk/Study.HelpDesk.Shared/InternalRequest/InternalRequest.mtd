@@ -2,6 +2,7 @@
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
   "NameGuid": "59450db8-c4f3-451e-9d51-14e1b4118555",
   "Name": "InternalRequest",
+  "AccessRightsMode": "Both",
   "Actions": [
     {
       "NameGuid": "52ddecbf-e09c-4bb1-9baf-cee3f8b098d1",
