@@ -124,6 +124,21 @@
   <data name="Property_SumHours" xml:space="preserve">
     <value>Sum hours</value>
   </data>
+  <data name="Action_OpenRequest" xml:space="preserve">
+    <value>Open request</value>
+  </data>
+  <data name="Action_OpenRequestConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_OpenRequestDescription" xml:space="preserve">
+    <value>Open request</value>
+  </data>
+  <data name="Action_OpenRequestHint" xml:space="preserve">
+    <value>Open request</value>
+  </data>
+  <data name="Action_OpenRequestConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
   <data name="Ribbon_Group_79400bebf24d46499d40f90529e849a7" xml:space="preserve">
     <value>Group</value>
   </data>

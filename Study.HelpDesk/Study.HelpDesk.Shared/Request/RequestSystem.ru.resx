@@ -118,6 +118,15 @@
   <data name="Property_SumHours" xml:space="preserve">
     <value>Сумма часов</value>
   </data>
+  <data name="Action_OpenRequestDescription" xml:space="preserve">
+    <value>Открыть  обращение</value>
+  </data>
+  <data name="Action_OpenRequestHint" xml:space="preserve">
+    <value>Открыть  обращение</value>
+  </data>
+  <data name="Action_OpenRequest" xml:space="preserve">
+    <value>Открыть  обращение</value>
+  </data>
   <data name="Ribbon_Group_79400bebf24d46499d40f90529e849a7" xml:space="preserve">
     <value>Группа</value>
   </data>

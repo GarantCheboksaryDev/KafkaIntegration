@@ -70,4 +70,19 @@
   <data name="Property_Author" xml:space="preserve">
     <value>Author</value>
   </data>
+  <data name="Action_ShowEmployeeRequest" xml:space="preserve">
+    <value>Обращения сотрудника</value>
+  </data>
+  <data name="Action_ShowEmployeeRequestDescription" xml:space="preserve">
+    <value>При нажатии показываются все обращения сотрудника.</value>
+  </data>
+  <data name="Action_ShowEmployeeRequestHint" xml:space="preserve">
+    <value>Показать обращения сотрудника.</value>
+  </data>
+  <data name="Action_ShowEmployeeRequestConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_ShowEmployeeRequestConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
 </root>

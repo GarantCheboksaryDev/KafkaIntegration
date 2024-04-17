@@ -2,6 +2,16 @@
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
   "NameGuid": "657099a3-0a10-47c4-8d56-9909b6f4ba5e",
   "Name": "Request",
+  "Actions": [
+    {
+      "NameGuid": "43f76ac0-49e3-42b9-ae2c-a56f316437d2",
+      "Name": "OpenRequest",
+      "ActionArea": "Card",
+      "GenerateHandler": true,
+      "LargeIconName": null,
+      "SmallIconName": null
+    }
+  ],
   "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
   "CanBeNavigationPropertyType": true,
   "Code": "Request",
@@ -432,7 +442,17 @@
     "NameGuid": "3c9ba2c2-4508-483b-8a38-c1185000d84e",
     "Name": "RibbonCard",
     "Categories": [],
-    "Elements": [],
+    "Elements": [
+      {
+        "$type": "Sungero.Metadata.RibbonActionButtonMetadata, Sungero.Metadata",
+        "NameGuid": "fd7b5fb6-5176-4c1f-a2df-14db44102c46",
+        "Name": "OpenRequest",
+        "ActionGuid": "43f76ac0-49e3-42b9-ae2c-a56f316437d2",
+        "ButtonSize": "Large",
+        "Index": -1,
+        "ParentGuid": "79400beb-f24d-4649-9d40-f90529e849a7"
+      }
+    ],
     "Groups": [
       {
         "NameGuid": "79400beb-f24d-4649-9d40-f90529e849a7",
