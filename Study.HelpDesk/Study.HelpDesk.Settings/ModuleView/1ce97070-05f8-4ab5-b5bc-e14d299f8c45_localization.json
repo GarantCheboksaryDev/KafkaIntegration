@@ -1,0 +1,48 @@
+{
+  "$type": "Sungero.NoCode.Settings.Models.SettingsLayerLocalization, Sungero.NoCode.Settings.Interfaces",
+  "CoverHeaderSettings_Title_000349fe41e34062b5d87d9bba8042b1": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Help Desk",
+    "ru-RU": "Поддержка пользователей"
+  },
+  "CoverHeaderSettings_Description_000349fe41e34062b5d87d9bba8042b1": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Поддержка пользователей путем принятия и отработки обращений"
+  },
+  "Tab_Title_e60b1e3603a7498b88008607b7383b3f": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Главная"
+  },
+  "Group_Title_c06e0d55a6524bc68062ed1f55a1c59c": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Обращения"
+  },
+  "Group_Title_54f4bd24f89440438f8a1f8f89d2d81e": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Общие данные"
+  },
+  "Action_Title_5c08f4e13a5843bda5df53dbc8097f89": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Создание внутреннего обращения"
+  },
+  "Action_Description_5c08f4e13a5843bda5df53dbc8097f89": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Открывает карточку сздания внутреннего обращения"
+  },
+  "Action_Title_f4362a14c86d44ba967e5fd72f9c995c": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Показ списков"
+  },
+  "Action_Description_f4362a14c86d44ba967e5fd72f9c995c": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": ""
+  },
+  "Action_Title_2e07348aeb6340caa8106dfb9da7c901": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": "Типы обращений"
+  },
+  "Action_Description_2e07348aeb6340caa8106dfb9da7c901": {
+    "$type": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib],[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+    "default": ""
+  }
+}

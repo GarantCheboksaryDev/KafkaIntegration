@@ -9,5 +9,14 @@ namespace Study.HelpDesk.Client
   public class ModuleFunctions
   {
 
+    /// <summary>
+    /// 
+    /// </summary>
+    [LocalizeFunction("Создание внутреннего обращения","Быстрое создание нового обращения")]
+    public virtual void CreateInternalRequest()
+    {
+      Functions.Module.Remote.CreateInternalRequest().Show();
+    }
+
   }
 }

@@ -67,6 +67,10 @@
   "InterfaceNamespace": "Study.HelpDesk",
   "IsolatedAssemblyName": "Study.HelpDesk.Isolated",
   "IsolatedNamespace": "Study.HelpDesk.Isolated",
+  "IsVisible": false,
+  "Overridden": [
+    "IsVisible"
+  ],
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "Study.HelpDesk",

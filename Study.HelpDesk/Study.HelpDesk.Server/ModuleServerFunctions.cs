@@ -9,5 +9,14 @@ namespace Study.HelpDesk.Server
   public class ModuleFunctions
   {
 
+    /// <summary>
+    /// 
+    /// </summary>
+    [Remote]
+    public static IInternalRequest CreateInternalRequest()
+    {
+      return HelpDesk.InternalRequests.Create();
+    }
+
   }
 }
