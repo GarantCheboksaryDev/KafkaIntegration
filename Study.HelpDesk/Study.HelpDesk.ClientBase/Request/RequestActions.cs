@@ -11,7 +11,6 @@ namespace Study.HelpDesk.Client
   {
     public virtual void ShowAddendumRequests(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      AddendumRequests.GetAll().Where( document => Equals(document.Request, _obj) ).Show();
     }
 
     public virtual bool CanShowAddendumRequests(Sungero.Domain.Client.CanExecuteActionArgs e)
@@ -21,7 +20,6 @@ namespace Study.HelpDesk.Client
 
     public virtual void CreateAddendumDocument(Sungero.Domain.Client.ExecuteActionArgs e)
     {
-      Functions.Request.Remote.CreateAddendumRequest(_obj).Show();
     }
 
     public virtual bool CanCreateAddendumDocument(Sungero.Domain.Client.CanExecuteActionArgs e)

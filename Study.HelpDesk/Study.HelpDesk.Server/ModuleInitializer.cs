@@ -26,7 +26,6 @@ namespace Study.HelpDesk.Server
       Requests.AccessRights.Save();
       // Добавить тип документа SupportContract в справочник DocumentType,
       // как документ договорного документопотока.
-      Sungero.Docflow.PublicInitializationFunctions.Module.CreateDocumentType("Договор на сопровождение", SupportContract.ClassTypeGuid,Sungero.Docflow.DocumentType.DocumentFlow.Contracts,true);
     }
   }
 
