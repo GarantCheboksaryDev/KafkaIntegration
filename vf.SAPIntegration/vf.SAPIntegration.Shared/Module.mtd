@@ -1,0 +1,119 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "7e7c8978-19b5-42dc-bd7a-74388efa3cca",
+  "Name": "SAPIntegration",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "vf.SAPIntegration.Client",
+  "ClientBaseAssemblyName": "vf.SAPIntegration.ClientBase",
+  "ClientBaseNamespace": "vf.SAPIntegration.ClientBase",
+  "ClientNamespace": "vf.SAPIntegration.Client",
+  "Code": "SAPInte",
+  "CompanyCode": "vf",
+  "Cover": {
+    "NameGuid": "38d484f9-4622-4150-9979-037afb3edc9f",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "179dc5e6-8eac-4fff-afde-6f5dc49675df",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "5c58f816-fa0b-4e40-9d77-199895c3b10d",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "ca6cfc0f-7123-44a8-a7e8-5c5962c8c43f",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "IsVisible": false,
+      "ItemId": "56cd47f8-5dcf-4597-bb65-6e0d8bef2377"
+    },
+    {
+      "IsVisible": false,
+      "ItemId": "6498a2b5-4d13-480f-9062-509906665de2",
+      "PreviousItemId": "56cd47f8-5dcf-4597-bb65-6e0d8bef2377"
+    },
+    {
+      "IsVisible": false,
+      "ItemId": "665d5be7-d761-46b6-b486-e9676edd0bde",
+      "PreviousItemId": "6498a2b5-4d13-480f-9062-509906665de2"
+    },
+    {
+      "IsVisible": false,
+      "ItemId": "a2abbc61-1ed3-4f95-a38e-603430932921",
+      "PreviousItemId": "665d5be7-d761-46b6-b486-e9676edd0bde"
+    },
+    {
+      "IsVisible": false,
+      "ItemId": "b51ecec8-b4e1-42f1-b39a-f75a90b3cf7e",
+      "PreviousItemId": "a2abbc61-1ed3-4f95-a38e-603430932921"
+    },
+    {
+      "IsVisible": false,
+      "ItemId": "b211a6d1-af12-402b-a120-716ea186d1d2",
+      "PreviousItemId": "b51ecec8-b4e1-42f1-b39a-f75a90b3cf7e"
+    },
+    {
+      "ItemId": "5597fa77-ff76-45d0-9b3e-76890214e864",
+      "PreviousItemId": "b211a6d1-af12-402b-a120-716ea186d1d2"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "vf.SAPIntegration",
+  "IsolatedAssemblyName": "vf.SAPIntegration.Isolated",
+  "IsolatedNamespace": "vf.SAPIntegration.Isolated",
+  "IsVisible": false,
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "SecurityService",
+      "ParentClasses": [
+        "Module",
+        "RoleGuid"
+      ],
+      "TypeName": "System.Guid",
+      "Value": "new System.Guid(\"6579cbf7-b488-40d6-9b3d-eb706ee0764f\")"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "vf.SAPIntegration",
+  "ResourcesKeys": [
+    "ServiceSecurityRoleName",
+    "ServiceSecurityRoleDescription"
+  ],
+  "ServerAssemblyName": "vf.SAPIntegration.Server",
+  "ServerNamespace": "vf.SAPIntegration.Server",
+  "SharedAssemblyName": "vf.SAPIntegration.Shared",
+  "SharedNamespace": "vf.SAPIntegration.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.66",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

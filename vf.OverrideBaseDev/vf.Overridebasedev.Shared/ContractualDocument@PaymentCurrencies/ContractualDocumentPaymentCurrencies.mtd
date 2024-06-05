@@ -1,0 +1,60 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "a0ffc36b-1a2b-4cfa-9908-dad963a27970",
+  "Name": "ContractualDocumentPaymentCurrencies",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "ContractualDoc",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "9fc883ff-ff2c-4b88-880c-e2be5a8cb871",
+      "Name": "ContractualDocument",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "d8d6f3af-1390-497c-a635-4defbc08e3ae",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "04d24baa-4553-44eb-bafe-af217e619438",
+      "Name": "PaymentCurrency",
+      "CanBeSearch": false,
+      "Code": "PaymentCurrenc",
+      "EntityGuid": "ffc2629f-dc30-4106-a3ce-c402ae7d32b9",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "9fc883ff-ff2c-4b88-880c-e2be5a8cb871"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "d0081df5-e7f3-4b62-b025-3983ae32968d",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "00689056-9704-420d-80d4-8d992b72153f",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

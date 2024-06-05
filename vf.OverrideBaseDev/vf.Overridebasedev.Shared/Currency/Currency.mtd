@@ -1,0 +1,233 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "a1419080-ffb9-43ad-b32f-087ec33503b9",
+  "Name": "Currency",
+  "BaseGuid": "ffc2629f-dc30-4106-a3ce-c402ae7d32b9",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "e9aa472f-b3de-43b3-a31e-f8a13b4bd955",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.StandaloneFormMetadata, Sungero.Metadata",
+      "NameGuid": "b517f3c0-07b2-423d-a8ef-449976db22e4",
+      "Name": "Card",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "94ac6101-6907-41a0-b3b8-5104348236a8",
+          "Name": "ControlGroup",
+          "ColumnDefinitions": [
+            {
+              "Percentage": 33.33
+            },
+            {
+              "Percentage": 33.33
+            },
+            {
+              "Percentage": 33.33
+            }
+          ],
+          "IsAncestorMetadata": true,
+          "Overridden": [
+            "Controls",
+            "ColumnDefinitions"
+          ],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "fd25de7b-f3f7-4a7a-bc69-16acb66e4c4d",
+          "Name": "Name",
+          "ColumnNumber": 0,
+          "ColumnSpan": 3,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "94ac6101-6907-41a0-b3b8-5104348236a8",
+          "PropertyGuid": "99613a95-7fa7-4389-81b0-f55e7449e4a6",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "7b3bec9b-5372-4709-89d1-111b955819ab",
+          "Name": "AlphaCode",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "94ac6101-6907-41a0-b3b8-5104348236a8",
+          "PropertyGuid": "22bedd7e-016d-41fc-b8bf-83c581a9b9e8",
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "c65faabd-19a8-4cf5-9505-130afcbcf6d5",
+          "Name": "ShortName",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "94ac6101-6907-41a0-b3b8-5104348236a8",
+          "PropertyGuid": "c7c361a2-09fe-4333-8014-8d9a81466748",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "038cc7ac-5dda-4962-a384-544da2395ed1",
+          "Name": "FractionName",
+          "ColumnNumber": 1,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "94ac6101-6907-41a0-b3b8-5104348236a8",
+          "PropertyGuid": "a2b5f651-8708-4724-87ec-3c11aa1371ae",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "56606bcf-cfe5-43d7-991d-73975e6df7f3",
+          "Name": "Status",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+          "ParentGuid": "94ac6101-6907-41a0-b3b8-5104348236a8",
+          "PropertyGuid": "1dcedc29-5140-4770-ac92-eabc212326a1",
+          "RowNumber": 3,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "894450ea-b00f-429d-9850-cf81fff7018e",
+          "Name": "Control",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+          "ParentGuid": "94ac6101-6907-41a0-b3b8-5104348236a8",
+          "PropertyGuid": "7223f634-c04e-4091-93b5-84b8cdbc0e77",
+          "RowNumber": 3,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "9796e8a3-df61-4d98-9c9a-a0ea45f7dd01",
+          "Name": "NumericCode",
+          "ColumnNumber": 1,
+          "ColumnSpan": 2,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "94ac6101-6907-41a0-b3b8-5104348236a8",
+          "PropertyGuid": "bc01ccbb-7951-4502-917e-7a0147a19db3",
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "cb384a7d-4679-4cb7-aa27-ec5f465d13a1",
+          "Name": "IsConditionalCurrency",
+          "ColumnNumber": 2,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+          "ParentGuid": "94ac6101-6907-41a0-b3b8-5104348236a8",
+          "PropertyGuid": "524160c3-9bfe-4cf0-9a26-c7429bd8b626",
+          "RowNumber": 3,
+          "RowSpan": 1,
+          "Settings": []
+        }
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "SettingsResourceKey"
+      ],
+      "Versions": []
+    }
+  ],
+  "HandledEvents": [
+    "BeforeSaveServer"
+  ],
+  "IconResourcesKeys": [],
+  "LayeredFromGuid": "ffc2629f-dc30-4106-a3ce-c402ae7d32b9",
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.BooleanPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "524160c3-9bfe-4cf0-9a26-c7429bd8b626",
+      "Name": "IsConditionalCurrency",
+      "Code": "IsConditionalC",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.BooleanEditorToBooleanBinder",
+      "PreviousPropertyGuid": "bc01ccbb-7951-4502-917e-7a0147a19db3"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "GetCurrencyByAlphaCode",
+      "Parameters": [
+        {
+          "Name": "alphaCode",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.OverrideBaseDev.ICurrency",
+      "ReturnTypeFullName": "vf.OverrideBaseDev.ICurrency, Sungero.Domain.Interfaces"
+    },
+    {
+      "Name": "GetDefaultCurrency",
+      "IsRemote": true,
+      "Placement": "Shared",
+      "ReturnType": "global::vf.OverrideBaseDev.ICurrency",
+      "ReturnTypeFullName": "vf.OverrideBaseDev.ICurrency, Sungero.Domain.Interfaces"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "b0003315-877f-4bfb-8299-b4dcc1e424ad",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "983eb2b7-78ea-4eda-b2f3-604176b08419",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

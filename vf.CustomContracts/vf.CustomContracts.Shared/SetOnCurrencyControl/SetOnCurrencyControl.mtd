@@ -1,0 +1,155 @@
+{
+  "$type": "Sungero.Metadata.TaskMetadata, Sungero.Workflow.Shared",
+  "NameGuid": "9e449e81-406d-4b30-8e5d-778e444b2726",
+  "Name": "SetOnCurrencyControl",
+  "AccessRightsMode": "Both",
+  "AttachmentGroups": [
+    {
+      "NameGuid": "1d91bffe-2838-47ca-9766-ab0f4eaa3e5d",
+      "Name": "ContractGroup",
+      "Constraints": [
+        {
+          "NameGuid": "3452c76b-2276-44b7-bdc4-fab480a4a4e0",
+          "Name": "ContractualDocuments",
+          "ConstraintTypeId": "d8d6f3af-1390-497c-a635-4defbc08e3ae",
+          "Limit": 1
+        }
+      ]
+    },
+    {
+      "NameGuid": "a2e05676-722f-45ac-9428-574d04495e7d",
+      "Name": "AddendumGroup",
+      "Constraints": [
+        {
+          "NameGuid": "fe54f97b-66ce-40b5-a962-cfabcace59a1",
+          "Name": "OfficialDocuments",
+          "ConstraintTypeId": "58cca102-1e97-4f07-b6ac-fd866a8b7cb1"
+        }
+      ],
+      "PreviousGroupId": "1d91bffe-2838-47ca-9766-ab0f4eaa3e5d"
+    }
+  ],
+  "BaseGuid": "d795d1f6-45c1-4e5e-9677-b53fb7280c7e",
+  "BlockIds": [],
+  "CanBeNavigationPropertyType": true,
+  "CanBeSearch": false,
+  "CreationAreaMetadata": {
+    "NameGuid": "8d829390-c6cf-4b00-b846-412f2d086650",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "bd0a4ce3-3467-48ad-b905-3820bf6b9da6",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.WorkflowEntityStandaloneFormMetadata, Sungero.Workflow.Shared",
+      "NameGuid": "a4d6d92a-261a-4c7e-826d-742b7d4062ee",
+      "Name": "Card",
+      "Controls": [],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "SettingsResourceKey"
+      ]
+    }
+  ],
+  "HideFromCreationArea": true,
+  "HideFromNavigationEditorCreationArea": true,
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "CustomContractsSetOnCurrencyControl",
+  "IsAutoCreated": true,
+  "IsVisibleThreadText": true,
+  "NeverLinkToParentWhenCreated": true,
+  "OperationsClass": "",
+  "Overridden": [
+    "CanBeSearch",
+    "UseSchemeFromSettings",
+    "NeedsReview",
+    "IsAutoCreated",
+    "HideFromCreationArea",
+    "HideFromNavigationEditorCreationArea"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.CollectionPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "3364c324-c4c4-4ccb-a81c-53653255a022",
+      "Name": "Observers",
+      "EntityGuid": "f64e3f2b-3bc4-4245-9e41-40b74c51bab5",
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "EntityGuid"
+      ]
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CreateTaskSetOnCurrencyControl",
+      "IsRemote": true,
+      "Parameters": [
+        {
+          "Name": "contract",
+          "ParameterType": "global::vf.OverrideBaseDev.IContractualDocument",
+          "ParameterTypeFullName": "vf.OverrideBaseDev.IContractualDocument, Sungero.Domain.Interfaces"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "Block3Subject",
+    "Block4Subject",
+    "Block5Subject",
+    "PaymentAssignmentSubject"
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "7f4f2a69-8b47-422c-996d-8476bdd36d0d",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "9262f308-1288-47b1-9c5b-f6fc60c0030f",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Scheme": {
+    "NameGuid": "c7ae4ee8-f2a6-4784-8e61-7f7f642dbcd1",
+    "Name": "RouteScheme",
+    "CurrentVersionGuid": "0745199f-eaac-4875-8563-40ed1e5ce317",
+    "IsAncestorMetadata": true,
+    "Overridden": [
+      "CurrentVersionGuid"
+    ],
+    "VersionsCounter": 1
+  },
+  "Versions": [
+    {
+      "Type": "TaskMetadata",
+      "Number": 3
+    },
+    {
+      "Type": "WorkflowEntityMetadata",
+      "Number": 2
+    },
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

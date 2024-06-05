@@ -1,0 +1,60 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "b19de9c5-2f4d-4fdc-8584-4370796d3210",
+  "Name": "CFOArticles",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "CFOArticles",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "938a6157-860e-48f8-8ac3-a357e90f7a10",
+      "Name": "CFO",
+      "CanBeSearch": false,
+      "Code": "CompanyStructu",
+      "EntityGuid": "f7a89779-0625-4536-8fb7-66c8d266c68f",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "1f44f6a9-bac2-47f4-9949-5823fb3bb066",
+      "Name": "Article",
+      "CanBeSearch": false,
+      "Code": "Article",
+      "EntityGuid": "cf86c2b9-77f3-423d-a510-8da978fb1372",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "938a6157-860e-48f8-8ac3-a357e90f7a10"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "fcb861cf-45fb-4e90-b7ce-3414b34c717c",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "5486f728-0e25-45c7-b30d-27c2442151a3",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

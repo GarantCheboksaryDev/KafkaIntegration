@@ -1,0 +1,121 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "665d5be7-d761-46b6-b486-e9676edd0bde",
+  "Name": "BankChargeType",
+  "BaseGuid": "04581d26-0780-4cfd-b3cd-c2cafc5798b0",
+  "CanBeNavigationPropertyType": true,
+  "Code": "BankChargeType",
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.StandaloneFormMetadata, Sungero.Metadata",
+      "NameGuid": "b39d4aa6-9444-4a29-aa95-5a21775dc7b6",
+      "Name": "Card",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "ace141c8-03b2-47bd-9ae6-1b7565795f0a",
+          "Name": "ControlGroup"
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "667129db-1c76-41a3-9a13-7953c622cec8",
+          "Name": "Control",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "ace141c8-03b2-47bd-9ae6-1b7565795f0a",
+          "PropertyGuid": "c2850561-74a1-4a58-b32e-b2f848f93af3",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "7a16eb5c-1a9e-4fde-a931-58ecfa76f2c8",
+          "Name": "SAPCode",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "ace141c8-03b2-47bd-9ae6-1b7565795f0a",
+          "PropertyGuid": "b35dfc4d-f9ea-45d2-b5e2-fdef95a0c4dd",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": []
+        }
+      ]
+    }
+  ],
+  "HideFromCreationArea": true,
+  "HideFromNavigationEditorCreationArea": true,
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "SAPIntegrationBankChargeType",
+  "IsVisible": false,
+  "OperationsClass": "",
+  "Overridden": [
+    "IsVisible",
+    "HideFromCreationArea",
+    "HideFromNavigationEditorCreationArea"
+  ],
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "c2850561-74a1-4a58-b32e-b2f848f93af3",
+      "Name": "Name",
+      "Code": "Name",
+      "IsDisplayValue": true,
+      "IsQuickSearchAllowed": true,
+      "IsRequired": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "1dcedc29-5140-4770-ac92-eabc212326a1"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "b35dfc4d-f9ea-45d2-b5e2-fdef95a0c4dd",
+      "Name": "SAPCode",
+      "Code": "SAPCode",
+      "IsRequired": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "c2850561-74a1-4a58-b32e-b2f848f93af3"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "0d5dbabb-246d-461d-90fc-39de34e4db79",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "c59c2ca9-0510-4556-b6c5-e40ac104c873",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

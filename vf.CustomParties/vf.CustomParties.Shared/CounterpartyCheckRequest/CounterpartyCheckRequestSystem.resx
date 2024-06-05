@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Заявка на проверку контрагента</value>
+  </data>
+  <data name="AccusativeDisplayName" xml:space="preserve">
+    <value>Заявка на проверку контрагента</value>
+  </data>
+  <data name="CollectionDisplayName" xml:space="preserve">
+    <value>Заявки на проверку контрагента</value>
+  </data>
+  <data name="Property_Counterparty" xml:space="preserve">
+    <value>Контрагент</value>
+  </data>
+  <data name="Property_CheckingResultSB" xml:space="preserve">
+    <value>Результат проверки СБ</value>
+  </data>
+  <data name="Property_RequestType" xml:space="preserve">
+    <value>Тип заявки</value>
+  </data>
+  <data name="Enum_RequestType_Initiative" xml:space="preserve">
+    <value>Инициативная заявка</value>
+  </data>
+  <data name="Enum_RequestType_NewCounterparty" xml:space="preserve">
+    <value>Новый контрагент</value>
+  </data>
+  <data name="Property_CheckingDate" xml:space="preserve">
+    <value>Дата проверки</value>
+  </data>
+  <data name="Property_CheckValidTill" xml:space="preserve">
+    <value>Дата окончания срока действия проверки</value>
+  </data>
+  <data name="Property_NextCheckDate" xml:space="preserve">
+    <value>Плановая дата следующей проверки</value>
+  </data>
+  <data name="AttachmentGroup_CounterpartyGroupTitle" xml:space="preserve">
+    <value>Контрагент</value>
+  </data>
+  <data name="AttachmentGroup_CounterpartyGroupInformationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AttachmentGroup_AttachmentsTitle" xml:space="preserve">
+    <value>Приложения</value>
+  </data>
+  <data name="AttachmentGroup_AttachmentsInformationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AttachmentGroup_AdditionalTitle" xml:space="preserve">
+    <value>Дополнительно</value>
+  </data>
+  <data name="AttachmentGroup_AdditionalInformationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_73e7c55ab14d49d89a690ed7d46bf563" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ControlGroup_3849ac3b252941c6aa0d03907f402a05" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_035869ed2baa4573bdfe9e4f5e10c4b3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_035869ed2baa4573bdfe9e4f5e10c4b3_EmptyText" xml:space="preserve">
+    <value>&lt;Тема будет сформирована автоматически&gt;</value>
+  </data>
+  <data name="Resource_74e85eafe5944dc5b4724e791948b781" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_74e85eafe5944dc5b4724e791948b781_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Enum_CheckingResultSB_SmallOperation" xml:space="preserve">
+    <value>Одобрен для малоценных операций</value>
+  </data>
+  <data name="Enum_CheckingResultSB_NotApproved" xml:space="preserve">
+    <value>Не одобрен</value>
+  </data>
+  <data name="Block_13453b2d02b94b42923ceea248872988" xml:space="preserve">
+    <value>Задание на проверку контрагента</value>
+  </data>
+  <data name="Property_CommentSB" xml:space="preserve">
+    <value>Комментарий СБ</value>
+  </data>
+  <data name="Property_TIN" xml:space="preserve">
+    <value>ИНН</value>
+  </data>
+  <data name="Property_IsInBlackList" xml:space="preserve">
+    <value>Включен в реестр недобросовестных контрагентов</value>
+  </data>
+  <data name="Block_45df42829b3743dd89348537effc85a4" xml:space="preserve">
+    <value>Уведомление для инициатора по завершению проверки контрагента</value>
+  </data>
+  <data name="Property_CheckingResultSPARK" xml:space="preserve">
+    <value>Результат проверки СПАРК</value>
+  </data>
+  <data name="Enum_CheckingResultSPARK_Green" xml:space="preserve">
+    <value>Зеленый</value>
+  </data>
+  <data name="Enum_CheckingResultSPARK_Yellow" xml:space="preserve">
+    <value>Желтый</value>
+  </data>
+  <data name="Enum_CheckingResultSPARK_Red" xml:space="preserve">
+    <value>Красный</value>
+  </data>
+  <data name="FilterPanel_Main_1298977eb24a4ebc8310a513a03997e2" xml:space="preserve">
+    <value>Основное</value>
+  </data>
+  <data name="FilterPanel_Counterparty_28364f0402aa4ecbb1aaad18e8721507" xml:space="preserve">
+    <value>Контрагент</value>
+  </data>
+  <data name="FilterPanel_CheckingResultSPARK_bf5afa9507a444c498b85a57337cae49" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FilterPanel_Green_de985f961b5f45c586a96ec766fc133c" xml:space="preserve">
+    <value>Зеленый</value>
+  </data>
+  <data name="FilterPanel_Yellow_abd649d72849483c8748d6d6ead05e5d" xml:space="preserve">
+    <value>Желтый</value>
+  </data>
+  <data name="FilterPanel_Red_00ed91cced9c49bcaa9eddf5cc8d913f" xml:space="preserve">
+    <value>Красный</value>
+  </data>
+  <data name="FilterPanel_RequestType_64cb511e6cb54d8a8a33ff2439f8f81c" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FilterPanel_Initiative_b5e784a809ca495db21aab308f2f6dd8" xml:space="preserve">
+    <value>Инициативная заявка</value>
+  </data>
+  <data name="FilterPanel_NewCounterparty_92d60f7e32734a39badf744df33641e4" xml:space="preserve">
+    <value>Новый контрагент</value>
+  </data>
+  <data name="FilterPanel_IsInBlackList_2b7760f54faf49a8919339583905c2b2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FilterPanel_IsInBlackList_4daebb8a225d43738d31f5675a4e22cf" xml:space="preserve">
+    <value>Включен в черный список</value>
+  </data>
+  <data name="FilterPanel_Period_6e6e921fe25b4f0b9e969fc53749209d" xml:space="preserve">
+    <value>Дата проверки</value>
+  </data>
+  <data name="FilterPanel_Last30days_6d12cbc852d147038a47a5d32f2d6186" xml:space="preserve">
+    <value>Последние 30 дней</value>
+  </data>
+  <data name="FilterPanel_Last365days_22ef65b28f2f428db2d5ad9ba7f75424" xml:space="preserve">
+    <value>Последние 365 дней</value>
+  </data>
+  <data name="FilterPanel_ManualPeriod_d3c6db2066e04c2fb877ef5503724a76" xml:space="preserve">
+    <value>Произвольный период:</value>
+  </data>
+  <data name="FilterPanel_CheckingResultSparkGroup_5004069d830a493ea77457e28cf8647e" xml:space="preserve">
+    <value>Результат проверки СПАРК</value>
+  </data>
+  <data name="FilterPanel_CheckingResultSBGroup_0dc7bde4b1fa40d5bddbbc4947988043" xml:space="preserve">
+    <value>Результат проверки СБ</value>
+  </data>
+  <data name="FilterPanel_RequestTypeGroup_9990f3a0f3304906af15df053812ba10" xml:space="preserve">
+    <value>Тип заявки</value>
+  </data>
+</root>

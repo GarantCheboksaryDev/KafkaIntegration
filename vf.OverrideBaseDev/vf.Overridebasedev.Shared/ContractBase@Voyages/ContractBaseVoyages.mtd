@@ -1,0 +1,51 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "440f6869-3680-473e-aba6-87063dffef69",
+  "Name": "ContractBaseVoyages",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "ffcb6b37-5b93-4adf-a340-a6c0f5b9ce48",
+  "CanBeNavigationPropertyType": true,
+  "ExtraSearchProperties": [],
+  "IntegrationServiceName": "ContractualDocumentVoyages",
+  "IsChildEntity": true,
+  "LayeredFromGuid": "ffcb6b37-5b93-4adf-a340-a6c0f5b9ce48",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "99232549-61f4-46cb-aa0b-3dc5f87f68ce",
+      "Name": "ContractualDocument",
+      "EntityGuid": "a7fe2c29-6a89-4501-9030-f2bbd951a859",
+      "IsAncestorMetadata": true,
+      "IsReferenceToRootEntity": true,
+      "Overridden": [
+        "EntityGuid"
+      ]
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "0b22b813-3e24-40f7-9dd2-3054b50aaf3c",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "0d0496a5-8c63-4d3b-869b-cbbae15794e5",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

@@ -1,0 +1,1434 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "3812f813-701d-4d0c-8195-ba2fa75e918a",
+  "Name": "KafkaIntegration",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "376040a6-64de-46a1-bba9-172438e31dca",
+      "Name": "UpdateBankInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "f3ad5723-b042-43af-9c0b-d20f9c020c43",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "75e780e6-a741-4969-a2f8-26cc2cb32c87",
+      "Name": "UpdateVoyageInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "30beb171-2564-49d6-81ee-ebd8fde1cdde",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "808f6aa6-c8ff-4656-b9b6-d4d10d068870",
+      "Name": "UpdateCounterpartiesInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "687c5fce-9fba-4c03-9d33-5798d23a2485",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "f32a0b2e-e868-460f-9341-bb980b84a683",
+      "Name": "UpdatePaymentAccountsInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "7e008a66-9a8d-4a12-9cc0-0d8314a1bdb7",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "60de78d9-9c6f-436f-8a1f-b54a7af50c33",
+      "Name": "UpdateEmployeesInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "441c5532-fc14-418e-87b0-27367907552c",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "9882f233-dbf2-4d22-8865-46da3d003e14",
+      "Name": "UpdatePeopleInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "8ab0b077-ca18-48e4-8121-0d87bfc034e0",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "13d72dc2-6a17-4441-a150-f48c73d8ebb5",
+      "Name": "UpdateBudgetItemsInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "7c183a76-ee40-40be-9126-21e0fb9f6c06",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "a635fb99-6816-4816-8747-8e8da96bdf9e",
+      "Name": "UpdateDepartmentsInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "d6ec00d4-7af9-4c1d-b004-ffccd81e8908",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "a51675b3-b1fc-44aa-a78c-a59294b6ceb3",
+      "Name": "UpdateCompanyStructureInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "93178d59-c108-4c07-b42b-e4c4ae17805d",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "1301c3ad-7b1d-44f4-a8ad-8c023b509218",
+      "Name": "UpdateCFOArticleItem",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "1e7aa82e-d2fa-4f30-b2a9-c00f7be10ca8",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "4336ec79-fe60-4d0b-afc1-33ad9966722d",
+      "Name": "UpdateDepartmentRegisterItem",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "c1ee4201-4e8f-4dbf-beb1-b5bcf306b261",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "511ca3e1-43e3-410e-aca1-ebf9cafd1c0d",
+      "Name": "SendContractInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 1,
+      "Parameters": [
+        {
+          "NameGuid": "0b330ce6-0208-4435-a09c-2d72fe578d54",
+          "Name": "ContractId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    },
+    {
+      "NameGuid": "2932dbcb-8b33-4141-b8d5-3813353977fd",
+      "Name": "UpdateOurPaymentAccountsInfo",
+      "DelayPeriod": 1,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 5,
+      "Parameters": [
+        {
+          "NameGuid": "e05531c0-3d30-4588-b17b-379e40f5d70d",
+          "Name": "QueueId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    }
+  ],
+  "ClientAssemblyName": "vf.KafkaIntegration.Client",
+  "ClientBaseAssemblyName": "vf.KafkaIntegration.ClientBase",
+  "ClientBaseNamespace": "vf.KafkaIntegration.ClientBase",
+  "ClientNamespace": "vf.KafkaIntegration.Client",
+  "Code": "KafkaIn",
+  "CompanyCode": "vf",
+  "Cover": {
+    "NameGuid": "8dbb3fda-e7cb-4586-9a6d-87b06dd12aab",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "48b25e61-9678-45bc-9b33-64c8e92bae9b",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "80fa2bfc-c0aa-4da8-afa6-03928a9174e6",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "ca6cfc0f-7123-44a8-a7e8-5c5962c8c43f",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "4b08ed11-3b1a-4cba-8f94-929fc6da4b25"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "vf.KafkaIntegration",
+  "IsolatedAreas": [
+    {
+      "NameGuid": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Name": "DeserializeObject"
+    }
+  ],
+  "IsolatedAssemblyName": "vf.KafkaIntegration.Isolated",
+  "IsolatedFunctions": [
+    {
+      "NameGuid": "37a9bf28-dc03-4283-ae44-d7304afa0f9d",
+      "Name": "DesirializeBankInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.IBanksFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.IBanksFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "f1f2395b-d4fd-4887-b3ee-b290f78a61fd",
+      "Name": "DesirializeBudgetItemsInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.IBudgetItemFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.IBudgetItemFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "f7304629-3dc0-4ca2-ab50-971e90c75985",
+      "Name": "DesirializeCFOArticleItem",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.ICFOArticleRegisterFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.ICFOArticleRegisterFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "4a0b83af-67f3-4471-94fd-36df6cbe886c",
+      "Name": "DesirializeCompanyStructureInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.ICompanyStructuresFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.ICompanyStructuresFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "b821b59f-65cc-4211-9edc-b16137711e6d",
+      "Name": "DesirializeCounterpartiesInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.ICounterpartiesFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.ICounterpartiesFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "a6d95030-c63e-44b8-9a3b-cedc2a2db110",
+      "Name": "DesirializeDepartmentInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.IDepartmentsFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.IDepartmentsFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "5abcf283-62b3-4758-8051-22593f150413",
+      "Name": "DesirializeDepartmentRegisterItem",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.IDepartmentRegisterFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.IDepartmentRegisterFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "99e45ba0-df06-4006-84cc-9f174c71ec74",
+      "Name": "DesirializeEmployeeInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.IEmployeesFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.IEmployeesFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "58975fdb-8df9-48a8-b01d-7308f4274b50",
+      "Name": "DesirializeOurPaymentAccountsInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.IOurPaymentAccountFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.IOurPaymentAccountFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "6e534f46-7f50-4664-8fd0-f035a06b8dd7",
+      "Name": "DesirializePaymentAccountsInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.IPaymentAccountFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.IPaymentAccountFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "62eef021-550f-4fb1-bbc2-6a269806a9d4",
+      "Name": "DesirializePersonInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.IPersonFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.IPersonFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "c6ad9136-7487-418e-90c4-a9a4c1438636",
+      "Name": "DesirializeVoyageInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::vf.KafkaIntegration.Structures.Module.IVoyagesFromKafka",
+      "ReturnTypeFullName": "vf.KafkaIntegration.Structures.Module.IVoyagesFromKafka, Sungero.Domain.Interfaces"
+    },
+    {
+      "NameGuid": "b96fb2cc-341d-4a25-aa05-d30178d9c54b",
+      "Name": "SerializeContractInfo",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "contractInfo",
+          "ParameterType": "global::vf.KafkaIntegration.Structures.Module.IContractToKafka",
+          "ParameterTypeFullName": "vf.KafkaIntegration.Structures.Module.IContractToKafka, Sungero.Domain.Interfaces"
+        }
+      ],
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    },
+    {
+      "NameGuid": "e30d9948-fab5-4069-b154-bb803eca49fc",
+      "Name": "SplitRegister",
+      "IsolatedAreaId": "72a117d9-62d5-444d-9db9-88c3da6e2e11",
+      "Parameters": [
+        {
+          "Name": "jsonValue",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::System.Collections.Generic.List<global::System.String>",
+      "ReturnTypeFullName": "System.Collections.Generic.List`1[[System.String]]"
+    }
+  ],
+  "IsolatedNamespace": "vf.KafkaIntegration.Isolated",
+  "IsVisible": false,
+  "Jobs": [
+    {
+      "NameGuid": "423ff426-c2af-42f9-87fd-39e9d9bdb6e4",
+      "Name": "GetBankInfoFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "7968e509-1179-4bd2-b908-47bcde5bebcb",
+      "Name": "GetVoyageInfoFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "529634b6-3d70-4862-a9c2-47945219c2bb",
+      "Name": "GetCounterpartiesInfoFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "55ca1cc5-a843-4332-9be9-9f0c7d069be5",
+      "Name": "GetPaymentAccountInfoFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "bfc6795a-60e0-4a6d-92be-362f22ff946e",
+      "Name": "GetEmployeesInfoFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "b3196d67-da29-4a9d-8c2c-351d4d19f790",
+      "Name": "GetBudgetItemsInfoFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "aaa21871-cf1f-4a6a-b1a2-7d4d57dc2912",
+      "Name": "GetPeopleInfoFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "74a11798-66b1-4bc8-ac6d-b68a08641187",
+      "Name": "GetDepartmentsFromkafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "2d2bcb11-e7c5-4bf4-8191-f8b1d3c2ca5d",
+      "Name": "GetCompanyStructureFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "2fdc1c37-7d88-46e8-9fa9-3dad2dd270a6",
+      "Name": "GetCFOArticleRegisterFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "9d63cb69-cbf7-4d91-bc2b-232f5b6c9773",
+      "Name": "GetDepartmentRegisterFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    },
+    {
+      "NameGuid": "3efb5f02-88f5-42de-b3e3-8b54853d86b1",
+      "Name": "GetOurPaymentAccountInfoFromKafka",
+      "GenerateHandler": true,
+      "MonthSchedule": "Monthly",
+      "StartAt": "1753-01-01T08:30:00"
+    }
+  ],
+  "Libraries": [
+    {
+      "NameGuid": "29a41d3c-ec3d-4711-bf16-1bebaa9bfcf4",
+      "Name": "KafkaNet",
+      "Scope": "Both"
+    }
+  ],
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicConstants": [
+    {
+      "Name": "DirectumIdPrefix",
+      "ParentClasses": [
+        "Module",
+        "SystemCodes"
+      ],
+      "TypeName": "System.String",
+      "Value": "\"_DRX\""
+    },
+    {
+      "Name": "MaxRetriesAmount",
+      "ParentClasses": [
+        "Module"
+      ],
+      "TypeName": "System.Int32",
+      "Value": "5"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CheckConnectToService",
+      "Parameters": [
+        {
+          "Name": "topicName",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "Name": "IsDirectumId",
+      "Parameters": [
+        {
+          "Name": "Id",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    },
+    {
+      "Name": "RemovePrefixFromId",
+      "Parameters": [
+        {
+          "Name": "Id",
+          "ParameterType": "global::System.String",
+          "ParameterTypeFullName": "System.String"
+        }
+      ],
+      "Placement": "Shared",
+      "ReturnType": "global::System.String",
+      "ReturnTypeFullName": "System.String"
+    }
+  ],
+  "PublicStructures": [
+    {
+      "Name": "BanksFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Bank_ctry",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Bank_key",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Bank_name",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Street",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Swift_Code",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Bank_Branch",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "GUID1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Deleted_flag",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "BudgetItemFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Guid1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Name",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ContractType",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ArticleType",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "FirstLevel",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "SecondLevel",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ThreeLevel",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "FourLevel",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Deleted_flag",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "CFOArticleRegisterFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "CFO",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Article",
+          "IsList": true,
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::System.String>"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "CompanyStructuresFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Guid1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Name",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Organization",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "MVZCode",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "CFOCode",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "CFO_flag",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "Ship_flag",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "Deleted_flag",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "ContractToKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "SedId",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Hyperlink",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "RegistrationNumber",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "RegistrationDate",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.DateTime>"
+        },
+        {
+          "Name": "Created",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.DateTime>"
+        },
+        {
+          "Name": "Content",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Start_date",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.DateTime>"
+        },
+        {
+          "Name": "End_date",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.DateTime>"
+        },
+        {
+          "Name": "IsAutoRenewable",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "ResponsibleEmployee",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Department",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "VatRate",
+          "TypeFullName": "global::System.Double"
+        },
+        {
+          "Name": "Counterparty",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "GetSAPState",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "GetSAPStatus",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "PaymentTermsName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "PaymentTermsCode",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ContractType",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "IncotermsKind",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Currency",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "PaymentCurrencies",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::System.String>"
+        },
+        {
+          "Name": "TotalAmount",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.Double>"
+        },
+        {
+          "Name": "NetAmount",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.Double>"
+        },
+        {
+          "Name": "VatAmount",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.Double>"
+        },
+        {
+          "Name": "ContractUniqueNumber",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "IsSupAgreement",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "MainContract",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "CounterpartyRegistrationNumber",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ContractDate",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.DateTime>"
+        },
+        {
+          "Name": "DocumentKind",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ErpDatabookName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "BusinessUnit",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "OwnBank",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "OwnPaymentAccount",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "CounterpartyPaymentAccount",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "AdditionalCounterParty",
+          "IsList": true,
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::System.String>"
+        },
+        {
+          "Name": "ValidFromDeadLine",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ValidFromAction",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Author",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Provision",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "TaxAgent",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "BankChargeType",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ConditionBasePayment",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "PurchasingType",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "AdvanceClosedDate",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.DateTime>"
+        },
+        {
+          "Name": "OriginalStock",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "AccessRights",
+          "IsList": true,
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::System.String>"
+        },
+        {
+          "Name": "RegNumEqualContractNumber",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "ProjectNumber",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Confidential",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "CounterpartiesFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "InternalId",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Guid1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Common",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Longtextlnam",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Longtext",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "InternationalName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "INN",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "KPP",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "OGRN",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "CountryCode",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "TaxIdentificationNumberTypeCode",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "LegalAddress",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "PostalAddress",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Phones",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Email",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Deleted_flag",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "DepartmentRegisterFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Department",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Manager",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "MVZ",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "CFO",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "DepartmentsFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Guid1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Name",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "HeadDepartment",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Organization",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "HCMCode",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Ship_flag",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "Deleted_flag",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "EmployeesFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Guid1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "PersonnelNumber",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "PersonGuid",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "DepartmentGuid",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "JobTitleGuid",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "JobTitleName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Fired_flag",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "Organization",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "OurPaymentAccountFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "InternalId",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Guid1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "GuidBank1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "BankControlKey",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Organization",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Currency",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Deleted_flag",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "PaymentAccountFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "InternalId",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Guid1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "GuidBank1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "BankControlKey",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "GuidCounterparty1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Currency",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Deleted_flag",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "PersonFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Guid1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "HCMCode",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "FirstName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "LastName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "MiddleName",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "DateOfBirth",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.DateTime>"
+        },
+        {
+          "Name": "Gender",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "INN",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "SNILS",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Deleted_flag",
+          "TypeFullName": "global::System.Boolean"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    },
+    {
+      "Name": "VoyagesFromKafka",
+      "IsIsolated": true,
+      "IsPublic": true,
+      "Properties": [
+        {
+          "Name": "Number",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Guid1C",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "Start_date",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.DateTime>"
+        },
+        {
+          "Name": "End_date",
+          "IsNullable": true,
+          "TypeFullName": "global::System.Nullable<global::System.DateTime>"
+        },
+        {
+          "Name": "Vessel_MVZ_code",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        },
+        {
+          "Name": "ContractIds",
+          "IsList": true,
+          "IsNullable": true,
+          "TypeFullName": "global::System.Collections.Generic.List<global::System.String>"
+        },
+        {
+          "Name": "Deleted_flag",
+          "TypeFullName": "global::System.Boolean"
+        },
+        {
+          "Name": "Organization",
+          "IsNullable": true,
+          "TypeFullName": "global::System.String"
+        }
+      ],
+      "StructureNamespace": "vf.KafkaIntegration.Structures.Module"
+    }
+  ],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "vf.KafkaIntegration",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "vf.KafkaIntegration.Server",
+  "ServerNamespace": "vf.KafkaIntegration.Server",
+  "SharedAssemblyName": "vf.KafkaIntegration.Shared",
+  "SharedNamespace": "vf.KafkaIntegration.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.31",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

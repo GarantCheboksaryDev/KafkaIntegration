@@ -1,0 +1,76 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "847ecc42-5c21-4dc0-9483-010189939fd5",
+  "Name": "DirectionManagerApprovalRole",
+  "BaseGuid": "3445f357-1435-4444-9f24-a56a752fc471",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "CustomContractsDirectionManagerApprovalRole",
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "644bffad-c8fe-4ef4-90fc-15bc9176a728",
+      "Name": "Type",
+      "DirectValues": [
+        {
+          "NameGuid": "49c58b7f-f1e0-4823-8f22-298acdd6cc06",
+          "Name": "DirectionManager",
+          "Code": "DirectionManage"
+        },
+        {
+          "NameGuid": "ed9343b8-106d-4325-90de-b277c9aa31a1",
+          "Name": "BudgetController",
+          "Code": "BudgetControll"
+        }
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "Values"
+      ],
+      "Versions": []
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "f7a6d9c1-cada-4854-bcb4-a1c2fb822312",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "c16ed7f6-9810-45de-8cbe-7780b73f4e69",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}
