@@ -35,61 +35,6 @@
           "NameGuid": "df1c6035-4d49-47eb-a94c-2971584dd2de",
           "Name": "Counterparty",
           "Code": "Counterparty"
-        },
-        {
-          "NameGuid": "b1a0764f-dcc7-4121-b991-37ed061c891c",
-          "Name": "PaymentAccount",
-          "Code": "PaymentAccount"
-        },
-        {
-          "NameGuid": "ea53deef-0709-4df9-a5ad-de74c4da6dff",
-          "Name": "Department",
-          "Code": "Department"
-        },
-        {
-          "NameGuid": "1786bca3-05f0-4e73-b8c0-6d5e1a605160",
-          "Name": "Employee",
-          "Code": "Employee"
-        },
-        {
-          "NameGuid": "c0ef2901-7ef2-4690-b4b6-0557034bafa4",
-          "Name": "Contract",
-          "Code": "Contract"
-        },
-        {
-          "NameGuid": "48a5d1f8-a62e-4789-8935-10bd6cb46627",
-          "Name": "Person",
-          "Code": "Person"
-        },
-        {
-          "NameGuid": "4ec2912b-a492-4254-baad-ad6e7e1c24d6",
-          "Name": "Voyage",
-          "Code": "Voyage"
-        },
-        {
-          "NameGuid": "1e2ff5c1-30f5-4807-9420-005d1bb02bfe",
-          "Name": "BudgetItem",
-          "Code": "BudgetItem"
-        },
-        {
-          "NameGuid": "4206eaf6-821d-4d47-baa6-641262683939",
-          "Name": "CompanyStruct",
-          "Code": "CompanyStruct"
-        },
-        {
-          "NameGuid": "7309d81d-624e-47a6-adeb-6569797da9c3",
-          "Name": "CFOArticle",
-          "Code": "CFOArticle"
-        },
-        {
-          "NameGuid": "1b5ca584-f02a-4475-bf93-2593c2ecda6e",
-          "Name": "RegisterDeprt",
-          "Code": "RegisterDeprt"
-        },
-        {
-          "NameGuid": "ecf7ae7e-2b26-4ce4-8081-51527b433ec9",
-          "Name": "OurPaymentAccou",
-          "Code": "OurPaymentAccou"
         }
       ],
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
