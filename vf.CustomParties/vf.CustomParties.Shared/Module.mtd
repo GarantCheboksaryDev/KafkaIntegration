@@ -1,0 +1,104 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "d93888d1-35ff-4b0b-9013-8a533b7f3727",
+  "Name": "CustomParties",
+  "AsyncHandlers": [
+    {
+      "NameGuid": "af2d3209-07ec-434b-bc0e-f5fc2ffd9de4",
+      "Name": "UpdateCounterpartyRequisitesAsync",
+      "DelayPeriod": 2,
+      "DelayStrategy": "RegularDelayStrategy",
+      "IsHandlerGenerated": true,
+      "MaxRetryCount": 10,
+      "Parameters": [
+        {
+          "NameGuid": "6d0e42a1-2504-4714-bb9d-575b6f22bd45",
+          "Name": "CounterpartyId",
+          "ParameterType": "LongInteger"
+        },
+        {
+          "NameGuid": "947ec6e6-9bc0-4d46-b7f0-809f788bd481",
+          "Name": "AssignmentId",
+          "ParameterType": "LongInteger"
+        }
+      ]
+    }
+  ],
+  "ClientAssemblyName": "vf.CustomParties.Client",
+  "ClientBaseAssemblyName": "vf.CustomParties.ClientBase",
+  "ClientBaseNamespace": "vf.CustomParties.ClientBase",
+  "ClientNamespace": "vf.CustomParties.Client",
+  "Code": "CustomP",
+  "CompanyCode": "vf",
+  "Cover": {
+    "NameGuid": "9ec91e56-d461-48af-a174-df7cd714e749",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "b68308ad-6bed-4223-8714-efe071dc4f08",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "ca0d6ec7-825a-4d3c-9720-2c63f49b565c",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "Dependencies": [
+    {
+      "Id": "3974dc55-046b-4b1d-aba2-3a64aa328e0d",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "b5ed3a4b-cfcc-413a-b93e-561031077a83"
+    },
+    {
+      "ItemId": "aa3dbb88-1644-4c51-a365-8f6cdaed4a69",
+      "PreviousItemId": "b5ed3a4b-cfcc-413a-b93e-561031077a83"
+    },
+    {
+      "ItemId": "56ff5efe-df23-4cc5-805e-3fa19c658271",
+      "PreviousItemId": "aa3dbb88-1644-4c51-a365-8f6cdaed4a69"
+    }
+  ],
+  "HandledEvents": [
+    "InitializingServer"
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "vf.CustomParties",
+  "IsolatedAssemblyName": "vf.CustomParties.Isolated",
+  "IsolatedNamespace": "vf.CustomParties.Isolated",
+  "IsVisible": false,
+  "Overridden": [
+    "IsVisible"
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "vf.CustomParties",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "vf.CustomParties.Server",
+  "ServerNamespace": "vf.CustomParties.Server",
+  "SharedAssemblyName": "vf.CustomParties.Shared",
+  "SharedNamespace": "vf.CustomParties.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.43",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

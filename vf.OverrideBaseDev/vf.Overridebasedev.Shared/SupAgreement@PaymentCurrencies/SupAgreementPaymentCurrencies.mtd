@@ -1,0 +1,51 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "a50bfeaa-48fa-44ca-b797-efea633bd2d9",
+  "Name": "SupAgreementPaymentCurrencies",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a0ffc36b-1a2b-4cfa-9908-dad963a27970",
+  "CanBeNavigationPropertyType": true,
+  "ExtraSearchProperties": [],
+  "IntegrationServiceName": "ContractualDocumentPaymentCurrencies",
+  "IsChildEntity": true,
+  "LayeredFromGuid": "a0ffc36b-1a2b-4cfa-9908-dad963a27970",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "9fc883ff-ff2c-4b88-880c-e2be5a8cb871",
+      "Name": "ContractualDocument",
+      "EntityGuid": "2697a339-14ab-4fcb-bc62-7e2eed05ce11",
+      "IsAncestorMetadata": true,
+      "IsReferenceToRootEntity": true,
+      "Overridden": [
+        "EntityGuid"
+      ]
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "d0081df5-e7f3-4b62-b025-3983ae32968d",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "00689056-9704-420d-80d4-8d992b72153f",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

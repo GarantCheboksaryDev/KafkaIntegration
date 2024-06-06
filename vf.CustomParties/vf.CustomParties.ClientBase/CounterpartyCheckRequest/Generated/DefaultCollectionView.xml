@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+  <ViewName>Default</ViewName>
+  <Collection FormGuid="cddd4c25-da1e-45d4-ab4b-0250a22ce940">
+    <XtraSerializer version="1.0" application="GridControl">
+      <property name="#LayoutVersion" isnull="true" />
+      <property name="$GridControl" iskey="true" value="GridControl">
+        <property name="View" isnull="true" iskey="true">
+          <property name="LinesPerRowMode">OneLineMode</property>
+          <property name="ColumnChooserState" isnull="true" iskey="true">
+            <property name="Location">1100,328.769230769231</property>
+            <property name="Size">220,250</property>
+          </property>
+          <property name="WaitIndicatorType">Panel</property>
+          <property name="ShowTotalSummary">false</property>
+          <property name="IsRowCellMenuEnabled">true</property>
+          <property name="ShowGroupPanel">false</property>
+          <property name="AutoWidth">true</property>
+        </property>
+        <property name="TotalSummary" iskey="true" value="0" />
+        <property name="SortInfo" iskey="true" value="1">
+          <property name="Item1" isnull="true" iskey="true">
+            <property name="FieldName">Created</property>
+            <property name="SortOrder">Descending</property>
+          </property>
+        </property>
+        <property name="GroupSummary" iskey="true" value="0" />
+        <property name="GroupCount">0</property>
+        <property name="Columns" iskey="true" value="25">
+          <property name="Item1" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">9</property>
+            <property name="MinWidth">32</property>
+            <property name="FixedWidth">true</property>
+            <property name="Visible">true</property>
+            <property name="FieldName">T</property>
+            <property name="VisibleIndex">0</property>
+            <property name="Width">32</property>
+            <property name="ActualWidth">3*</property>
+          </property>
+          <property name="Item2" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">10</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Equals</property>
+            <property name="Name">CounterpartyCheckRequest_Id</property>
+            <property name="FieldName">Id</property>
+            <property name="VisibleIndex">0</property>
+            <property name="ActualWidth">4*</property>
+          </property>
+          <property name="Item3" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">11</property>
+            <property name="Visible">true</property>
+            <property name="AutoFilterCondition">Contains</property>
+            <property name="Name">CounterpartyCheckRequest_Subject</property>
+            <property name="FieldName">Subject</property>
+            <property name="VisibleIndex">1</property>
+            <property name="ActualWidth">44*</property>
+          </property>
+          <property name="Item4" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">13</property>
+            <property name="Visible">true</property>
+            <property name="AutoFilterCondition">Contains</property>
+            <property name="Name">CounterpartyCheckRequest_Author</property>
+            <property name="FieldName">Author.DisplayValue</property>
+            <property name="VisibleIndex">2</property>
+            <property name="ActualWidth">15*</property>
+          </property>
+          <property name="Item5" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">23</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Contains</property>
+            <property name="Name">CounterpartyCheckRequest_StartedBy</property>
+            <property name="FieldName">StartedBy.DisplayValue</property>
+            <property name="VisibleIndex">13</property>
+            <property name="ActualWidth">15*</property>
+          </property>
+          <property name="Item6" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">19</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Contains</property>
+            <property name="Name">CounterpartyCheckRequest_Status</property>
+            <property name="FieldName">Status</property>
+            <property name="VisibleIndex">8</property>
+            <property name="ActualWidth">10*</property>
+          </property>
+          <property name="Item7" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">12</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Contains</property>
+            <property name="Name">CounterpartyCheckRequest_Importance</property>
+            <property name="FieldName">Importance</property>
+            <property name="VisibleIndex">1</property>
+            <property name="ActualWidth">3*</property>
+          </property>
+          <property name="Item8" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">14</property>
+            <property name="Visible">true</property>
+            <property name="AutoFilterCondition">Equals</property>
+            <property name="Name">CounterpartyCheckRequest_Created</property>
+            <property name="FieldName">Created</property>
+            <property name="VisibleIndex">3</property>
+            <property name="ActualWidth">15*</property>
+          </property>
+          <property name="Item9" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">17</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Equals</property>
+            <property name="Name">CounterpartyCheckRequest_Modified</property>
+            <property name="FieldName">Modified</property>
+            <property name="VisibleIndex">6</property>
+            <property name="ActualWidth">15*</property>
+          </property>
+          <property name="Item10" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">18</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Equals</property>
+            <property name="Name">CounterpartyCheckRequest_Started</property>
+            <property name="FieldName">Started</property>
+            <property name="VisibleIndex">7</property>
+            <property name="ActualWidth">15*</property>
+          </property>
+          <property name="Item11" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">15</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Equals</property>
+            <property name="Name">CounterpartyCheckRequest_MaxDeadline</property>
+            <property name="FieldName">MaxDeadline</property>
+            <property name="VisibleIndex">3</property>
+            <property name="ActualWidth">15*</property>
+          </property>
+          <property name="Item12" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">20</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Equals</property>
+            <property name="Name">CounterpartyCheckRequest_NeedsReview</property>
+            <property name="FieldName">NeedsReview</property>
+            <property name="VisibleIndex">9</property>
+            <property name="ActualWidth">10*</property>
+          </property>
+          <property name="Item13" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">21</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Contains</property>
+            <property name="Name">CounterpartyCheckRequest_ParentTask</property>
+            <property name="FieldName">ParentTask.DisplayValue</property>
+            <property name="VisibleIndex">11</property>
+            <property name="ActualWidth">15*</property>
+          </property>
+          <property name="Item14" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">22</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Contains</property>
+            <property name="Name">CounterpartyCheckRequest_ParentAssignment</property>
+            <property name="FieldName">ParentAssignment.DisplayValue</property>
+            <property name="VisibleIndex">12</property>
+            <property name="ActualWidth">15*</property>
+          </property>
+          <property name="Item15" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">24</property>
+            <property name="Visible">false</property>
+            <property name="AutoFilterCondition">Contains</property>
+            <property name="Name">CounterpartyCheckRequest_MainTask</property>
+            <property name="FieldName">MainTask.DisplayValue</property>
+            <property name="VisibleIndex">14</property>
+            <property name="ActualWidth">15*</property>
+          </property>
+          <property name="Item16" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">16</property>
+            <property name="Visible">true</property>
+            <property name="Name">CounterpartyCheckRequest_Counterparty</property>
+            <property name="FieldName">Counterparty.DisplayValue</property>
+            <property name="VisibleIndex">4</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item17" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">0</property>
+            <property name="Visible">false</property>
+            <property name="Name">CounterpartyCheckRequest_RequestType</property>
+            <property name="FieldName">RequestType</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item18" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">1</property>
+            <property name="Visible">false</property>
+            <property name="Name">CounterpartyCheckRequest_CheckingDate</property>
+            <property name="FieldName">CheckingDate</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item19" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">2</property>
+            <property name="Visible">false</property>
+            <property name="Name">CounterpartyCheckRequest_CheckValidTill</property>
+            <property name="FieldName">CheckValidTill</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item20" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">3</property>
+            <property name="Visible">false</property>
+            <property name="Name">CounterpartyCheckRequest_NextCheckDate</property>
+            <property name="FieldName">NextCheckDate</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item21" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">4</property>
+            <property name="Visible">false</property>
+            <property name="Name">CounterpartyCheckRequest_CheckingResultSB</property>
+            <property name="FieldName">CheckingResultSB</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item22" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">5</property>
+            <property name="Visible">false</property>
+            <property name="Name">CounterpartyCheckRequest_CommentSB</property>
+            <property name="FieldName">CommentSB</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item23" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">6</property>
+            <property name="Visible">false</property>
+            <property name="Name">CounterpartyCheckRequest_TIN</property>
+            <property name="FieldName">TIN</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item24" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">7</property>
+            <property name="Visible">false</property>
+            <property name="Name">CounterpartyCheckRequest_IsInBlackList</property>
+            <property name="FieldName">IsInBlackList</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+          <property name="Item25" isnull="true" iskey="true">
+            <property name="ExtendedVisibleIndex">8</property>
+            <property name="Visible">false</property>
+            <property name="Name">CounterpartyCheckRequest_CheckingResultSPARK</property>
+            <property name="FieldName">CheckingResultSPARK</property>
+            <property name="ActualWidth">NaN</property>
+          </property>
+        </property>
+        <property name="GroupSummarySortInfo" iskey="true" value="0" />
+      </property>
+    </XtraSerializer>
+  </Collection>
+</settings>

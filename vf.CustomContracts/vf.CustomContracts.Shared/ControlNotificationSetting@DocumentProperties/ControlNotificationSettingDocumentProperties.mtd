@@ -1,0 +1,102 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "1a390803-60c2-4e5d-8a8a-5d4b7444844a",
+  "Name": "ControlNotificationSettingDocumentProperties",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "ControlNotifi1",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "cf216eb1-3b4e-4b20-817f-7d7fd4cdba7b",
+      "Name": "ControlNotificationSetting",
+      "CanBeSearch": false,
+      "Code": "ControlNotific",
+      "EntityGuid": "b7d77a8c-3ac5-47b9-9868-6b1344a966eb",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "5d05210b-8b7f-46ea-aaaa-9ba7757c464e",
+      "Name": "PropertyName",
+      "CanBeSearch": false,
+      "Code": "PropertyName",
+      "DirectValues": [
+        {
+          "NameGuid": "7a1325fe-4576-4eee-8e91-d9feacc0e875",
+          "Name": "SpecialList",
+          "Code": "SpecialList"
+        },
+        {
+          "NameGuid": "f0ab43d2-ae2b-4ef3-bce7-d6329be25e57",
+          "Name": "ContractConclud",
+          "Code": "ContractConclud"
+        },
+        {
+          "NameGuid": "6a864bdb-3eb6-46d5-a35d-ff66523ab6ac",
+          "Name": "PurchasingProce",
+          "Code": "PurchasingProce"
+        },
+        {
+          "NameGuid": "a287004b-66ff-4d23-83b6-92b96740c4b5",
+          "Name": "TotalSum",
+          "Code": "TotalSum"
+        },
+        {
+          "NameGuid": "d70a22a1-bfa9-4716-ac9d-fb389ffcef18",
+          "Name": "BankChargeType",
+          "Code": "BankChargeType"
+        },
+        {
+          "NameGuid": "048fcaef-5fad-427d-bbf0-c910b8d0b081",
+          "Name": "TaxAgent",
+          "Code": "TaxAgent"
+        }
+      ],
+      "HandledEvents": [
+        "ValueInputClient"
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+      "PreviousPropertyGuid": "cf216eb1-3b4e-4b20-817f-7d7fd4cdba7b"
+    },
+    {
+      "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "6d6bbc11-98b9-4c0c-a3b5-328fa4e4c4e4",
+      "Name": "Notification",
+      "CanBeSearch": false,
+      "Code": "Notification",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.MultilineStringEditorToTextBinder",
+      "PreviousPropertyGuid": "5d05210b-8b7f-46ea-aaaa-9ba7757c464e"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "e3e02210-4e64-4366-aa00-83ecf6679a72",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "a8f7d7f3-d13c-4aab-bc25-9ab29eeb7c9d",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

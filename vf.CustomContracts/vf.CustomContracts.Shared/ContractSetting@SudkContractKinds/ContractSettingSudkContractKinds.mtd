@@ -1,0 +1,60 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "9bde6413-d3c2-48c2-bae2-055c0d8cb78e",
+  "Name": "ContractSettingSudkContractKinds",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "ContractSetti1",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "96661adc-79da-4239-a847-89ae102bc86b",
+      "Name": "ContractSetting",
+      "CanBeSearch": false,
+      "Code": "ContractSettin",
+      "EntityGuid": "f6e13b88-4c3b-4ba7-95e6-f78aab040636",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8b9a6782-d894-497c-8833-ea4ca711bfef",
+      "Name": "ContractKind",
+      "CanBeSearch": false,
+      "Code": "ContractKind",
+      "EntityGuid": "68f2dbec-4437-4489-9c69-471ad26aed95",
+      "FlatListInStandaloneLookup": true,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "96661adc-79da-4239-a847-89ae102bc86b"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "5f102494-b0d1-436f-b18d-3a62c5751240",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "38ed425d-eb74-4a61-af3f-14c5e5cfd53f",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

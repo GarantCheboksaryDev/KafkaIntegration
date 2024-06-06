@@ -1,0 +1,61 @@
+{
+  "$type": "Sungero.Metadata.SolutionMetadata, Sungero.Metadata",
+  "NameGuid": "ca6cfc0f-7123-44a8-a7e8-5c5962c8c43f",
+  "Name": "Integration",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "vf.Integration.Client",
+  "ClientBaseAssemblyName": "vf.Integration.ClientBase",
+  "ClientBaseNamespace": "vf.Integration.ClientBase",
+  "ClientNamespace": "vf.Integration.Client",
+  "Code": "Integra",
+  "CompanyCode": "vf",
+  "Cover": {
+    "NameGuid": "3c678d65-3d77-464e-9013-96dbc328dc78",
+    "Actions": [],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "742689b0-2f1e-4a0b-a8af-f66a285d0c57",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [],
+    "Header": {
+      "NameGuid": "d6e9a1a0-fdbf-4a98-b1e3-fb7c2d45d5bb",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": []
+  },
+  "DesktopViews": [],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "vf.Integration",
+  "IsolatedAssemblyName": "vf.Integration.Isolated",
+  "IsolatedNamespace": "vf.Integration.Isolated",
+  "OrderedSpecialFolders": [],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "vf.Integration",
+  "ResourcesKeys": [],
+  "ServerAssemblyName": "vf.Integration.Server",
+  "ServerNamespace": "vf.Integration.Server",
+  "SharedAssemblyName": "vf.Integration.Shared",
+  "SharedNamespace": "vf.Integration.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.66",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "SolutionMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

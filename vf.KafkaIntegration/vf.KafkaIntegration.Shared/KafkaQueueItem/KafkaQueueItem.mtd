@@ -1,0 +1,532 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "4b08ed11-3b1a-4cba-8f94-929fc6da4b25",
+  "Name": "KafkaQueueItem",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "4e09273f-8b3a-489e-814e-a4ebfbba3e6c",
+  "CanBeNavigationPropertyType": true,
+  "CreationAreaMetadata": {
+    "NameGuid": "f7766750-eee2-4fcd-8003-5c06a90d1f44",
+    "Name": "CreationArea",
+    "Buttons": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "ExtraSearchProperties": [],
+  "FilterPanel": {
+    "NameGuid": "b0125fbd-3b91-4dbb-914a-689276216404",
+    "Name": "FilterPanel",
+    "Controls": [],
+    "IsAncestorMetadata": true,
+    "Versions": []
+  },
+  "Forms": [
+    {
+      "$type": "Sungero.Metadata.StandaloneFormMetadata, Sungero.Metadata",
+      "NameGuid": "ed7579ad-ac1f-4437-9e6a-dac80be479d8",
+      "Name": "Card",
+      "Controls": [
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "c93744cb-d157-41a6-97b3-b8ee4c6499da",
+          "Name": "Main",
+          "ColumnDefinitions": [
+            {
+              "Percentage": 50.0
+            },
+            {
+              "Percentage": 50.0
+            }
+          ],
+          "SharedNestedGroupsAlignment": true,
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "c10ff1cd-5479-4cdd-9eb5-f9586f736a34",
+          "Name": "ExternalId",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "c93744cb-d157-41a6-97b3-b8ee4c6499da",
+          "PropertyGuid": "8c2c1858-fd89-4924-9b1f-3a90685d2f13",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "87f48a35-721b-4314-9542-182ac3b05a38",
+          "Name": "ProcessingStatus",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+          "ParentGuid": "c93744cb-d157-41a6-97b3-b8ee4c6499da",
+          "PropertyGuid": "8c23dbed-5e18-4155-ae12-f4d10095e30b",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "2a69b3b3-ffde-4dc9-939d-43034df1da77",
+          "Name": "LastUpdate",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DateTimeEditorToDateTimeBinder",
+          "ParentGuid": "c93744cb-d157-41a6-97b3-b8ee4c6499da",
+          "PropertyGuid": "1c31bdc7-87cb-42d7-88d0-c186d96cbbc2",
+          "RowNumber": 1,
+          "RowSpan": 1,
+          "Settings": [],
+          "Versions": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "e09774da-2afd-42da-9e51-dc2fb919b229",
+          "Name": "MessageId",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "c93744cb-d157-41a6-97b3-b8ee4c6499da",
+          "PropertyGuid": "fca06611-765d-4d10-88af-ef6a8610dffa",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "fd45b644-4500-446e-93fc-aaf8fa9392ad",
+          "Name": "AdditionalGroup",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "GroupType": "Expander",
+          "ParentGuid": "c93744cb-d157-41a6-97b3-b8ee4c6499da",
+          "RowNumber": 3,
+          "RowSpan": 1
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "a77829af-1f49-445f-8e49-646ad8d00a0e",
+          "Name": "JsonValue",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
+          "HeaderLocation": "None",
+          "ParentGuid": "fd45b644-4500-446e-93fc-aaf8fa9392ad",
+          "PropertyGuid": "977b30c4-056f-4753-9322-5fbb685c5f5e",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": [
+            {
+              "Name": "Height",
+              "Value": 300
+            }
+          ]
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "6b3d6cb3-e719-4bf8-b8e8-1580f8bc805f",
+          "Name": "MessageType",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+          "ParentGuid": "c93744cb-d157-41a6-97b3-b8ee4c6499da",
+          "PropertyGuid": "2abfa0c7-a2f3-4c3a-a15a-5141c459a9b2",
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlGroupMetadata, Sungero.Metadata",
+          "NameGuid": "e67a7877-00b9-49f1-b6df-059cadf978e3",
+          "Name": "ErrorGroup",
+          "ColumnNumber": 0,
+          "ColumnSpan": 2,
+          "GroupType": "Expander",
+          "ParentGuid": "c93744cb-d157-41a6-97b3-b8ee4c6499da",
+          "RowNumber": 4,
+          "RowSpan": 1
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "357419bd-48e7-4c90-8902-1f0d5ff94dab",
+          "Name": "ErrorText",
+          "ColumnNumber": 0,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.TextEditorToTextBinder",
+          "HeaderLocation": "None",
+          "ParentGuid": "e67a7877-00b9-49f1-b6df-059cadf978e3",
+          "PropertyGuid": "12ee67e2-be4e-470c-9b35-c5c01667f938",
+          "RowNumber": 0,
+          "RowSpan": 1,
+          "Settings": []
+        },
+        {
+          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
+          "NameGuid": "16a990f1-e38f-4dff-9821-eb05af339f67",
+          "Name": "TopicName",
+          "ColumnNumber": 1,
+          "ColumnSpan": 1,
+          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+          "ParentGuid": "c93744cb-d157-41a6-97b3-b8ee4c6499da",
+          "PropertyGuid": "40968be8-1b3e-4305-8ccc-dd598190492d",
+          "RowNumber": 2,
+          "RowSpan": 1,
+          "Settings": []
+        }
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "SettingsResourceKey",
+        "Controls",
+        "UseAncestorControls"
+      ],
+      "Versions": []
+    }
+  ],
+  "HandledEvents": [
+    "RefreshClient",
+    "BeforeSaveServer"
+  ],
+  "IconResourcesKeys": [],
+  "IntegrationServiceName": "KafkaIntegrationKafkaQueueItem",
+  "OperationsClass": "",
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "8c23dbed-5e18-4155-ae12-f4d10095e30b",
+      "Name": "ProcessingStatus",
+      "DirectValues": [
+        {
+          "NameGuid": "dd87d6ae-9312-41d2-9d18-4f8454eb330e",
+          "Name": "Completed",
+          "Code": "Completed"
+        }
+      ],
+      "IsAncestorMetadata": true,
+      "Overridden": [
+        "Values"
+      ],
+      "Versions": []
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "fca06611-765d-4d10-88af-ef6a8610dffa",
+      "Name": "MessageId",
+      "Code": "MessageId",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "a5728174-aeff-46db-9a01-5f36adf3dec4"
+    },
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "2abfa0c7-a2f3-4c3a-a15a-5141c459a9b2",
+      "Name": "MessageType",
+      "Code": "MessageType",
+      "DirectValues": [
+        {
+          "NameGuid": "034929f0-ea51-4f5c-89ae-3f88e76ce465",
+          "Name": "Inner",
+          "Code": "Inner"
+        },
+        {
+          "NameGuid": "45dafa73-da66-430b-a37a-3cf0a9151b61",
+          "Name": "Outgoing",
+          "Code": "Outgoing"
+        }
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+      "PreviousPropertyGuid": "fca06611-765d-4d10-88af-ef6a8610dffa"
+    },
+    {
+      "$type": "Sungero.Metadata.TextPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "977b30c4-056f-4753-9322-5fbb685c5f5e",
+      "Name": "JsonBodyValue",
+      "Code": "JsonBodyValue",
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToTextBinder",
+      "PreviousPropertyGuid": "2abfa0c7-a2f3-4c3a-a15a-5141c459a9b2"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "40968be8-1b3e-4305-8ccc-dd598190492d",
+      "Name": "TopicName",
+      "Code": "TopicName",
+      "Length": 999,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "977b30c4-056f-4753-9322-5fbb685c5f5e"
+    },
+    {
+      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "12ee67e2-be4e-470c-9b35-c5c01667f938",
+      "Name": "ErrorText",
+      "Code": "ErrorText",
+      "Length": 999,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
+      "PreviousPropertyGuid": "40968be8-1b3e-4305-8ccc-dd598190492d"
+    },
+    {
+      "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "dee9a4ea-3263-4ccf-804d-617389d60e13",
+      "Name": "ObjectName",
+      "Code": "ObjectName",
+      "DirectValues": [
+        {
+          "NameGuid": "991897c4-596b-4623-bc11-037f9f4657fb",
+          "Name": "Bank",
+          "Code": "Bank"
+        },
+        {
+          "NameGuid": "997e0f97-5b4a-499e-a677-ec71831e2b33",
+          "Name": "Counterparty",
+          "Code": "Counterparty"
+        },
+        {
+          "NameGuid": "38058c0f-2903-496b-8e5a-5211a5f6d648",
+          "Name": "PaymentAccount",
+          "Code": "PaymentAccount"
+        },
+        {
+          "NameGuid": "3bd537ab-bfdb-492a-b3d9-2877c2a063de",
+          "Name": "Department",
+          "Code": "Department"
+        },
+        {
+          "NameGuid": "046a209c-8fd9-4d98-b5c3-5b9fdf71a5f9",
+          "Name": "Employee",
+          "Code": "Employee"
+        },
+        {
+          "NameGuid": "d3f1c428-137c-4203-b57a-97c74871d920",
+          "Name": "Contract",
+          "Code": "Contract"
+        },
+        {
+          "NameGuid": "039286ff-48d9-4892-a593-adad6049420a",
+          "Name": "Person",
+          "Code": "Person"
+        },
+        {
+          "NameGuid": "0ebe97d4-ebe1-49b9-a2d2-6f7f583cf8b5",
+          "Name": "Voyage",
+          "Code": "Voyage"
+        },
+        {
+          "NameGuid": "c0fb589a-91e5-4f5a-bdff-cfb3b57ee98b",
+          "Name": "BudgetItem",
+          "Code": "BudgetItem"
+        },
+        {
+          "NameGuid": "5825a7c8-34fd-422c-b937-f2194cf0ba17",
+          "Name": "CompanyStruct",
+          "Code": "CompanyStruct"
+        },
+        {
+          "NameGuid": "31f92d29-1d3a-4bbf-ad4d-eb2ed93e3e22",
+          "Name": "CFOArticle",
+          "Code": "CFOArticle"
+        },
+        {
+          "NameGuid": "3abc3f1c-3213-4d51-83f5-1a198a313ef8",
+          "Name": "RegisterDeprt",
+          "Code": "RegisterDeprt"
+        },
+        {
+          "NameGuid": "94bd54d0-8cca-4222-8fc1-8d67201fce76",
+          "Name": "OurPaymentAccou",
+          "Code": "OurPaymentAccou"
+        }
+      ],
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToEnumerationBinder",
+      "PreviousPropertyGuid": "12ee67e2-be4e-470c-9b35-c5c01667f938"
+    }
+  ],
+  "PublicFunctions": [
+    {
+      "Name": "CreateAsynchForBankMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForBudgetItemsMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForCFOArticleItemMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForCompanyStructureMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForCounterpartiesMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForDepartmentRegisterItemMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForDepartmentsMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForEmployeesMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForOurPaymentAccountMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForPaymentAccountMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForPersonMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "CreateAsynchForVoyageMessage",
+      "Parameters": [
+        {
+          "Name": "messagesQueue",
+          "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+          "ParameterTypeFullName": "System.Linq.IQueryable"
+        }
+      ],
+      "ReturnType": "void",
+      "ReturnTypeFullName": "System.Void"
+    },
+    {
+      "Name": "GetKaffkaItemQueueForError",
+      "Parameters": [
+        {
+          "Name": "objectName",
+          "ParameterType": "global::Sungero.Core.Enumeration",
+          "ParameterTypeFullName": "Sungero.Core.Enumeration, Sungero.Domain.Shared"
+        }
+      ],
+      "ReturnType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
+      "ReturnTypeFullName": "System.Linq.IQueryable"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourcesKeys": [
+    "KafkaQueueItemName"
+  ],
+  "RibbonCardMetadata": {
+    "NameGuid": "fcd6024c-9b83-45cc-8c35-da783e37fdef",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "46ddd5ad-8745-4150-9e61-fdc6ac1fc622",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

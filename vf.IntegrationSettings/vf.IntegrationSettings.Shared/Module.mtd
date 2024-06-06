@@ -1,0 +1,138 @@
+{
+  "$type": "Sungero.Metadata.ModuleMetadata, Sungero.Metadata",
+  "NameGuid": "79d62e79-ea14-40f1-9d84-b5569638a8c6",
+  "Name": "IntegrationSettings",
+  "AsyncHandlers": [],
+  "ClientAssemblyName": "vf.IntegrationSettings.Client",
+  "ClientBaseAssemblyName": "vf.IntegrationSettings.ClientBase",
+  "ClientBaseNamespace": "vf.IntegrationSettings.ClientBase",
+  "ClientNamespace": "vf.IntegrationSettings.Client",
+  "Code": "Integr1",
+  "CompanyCode": "vf",
+  "Cover": {
+    "NameGuid": "e6628606-3a23-4d65-b6e9-c747bce90412",
+    "Actions": [
+      {
+        "$type": "Sungero.Metadata.CoverFunctionActionMetadata, Sungero.Metadata",
+        "NameGuid": "06440d54-61ca-4b40-8e09-9810c0410313",
+        "Name": "HandleErrorRecords",
+        "FunctionName": "HandleErrorRecords",
+        "GroupId": "e0e717c8-7705-4b1c-b529-a6948bbd8113"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "6c8aa573-01b4-421c-804f-df38222fd5ce",
+        "Name": "QueueItem",
+        "EntityTypeId": "4b08ed11-3b1a-4cba-8f94-929fc6da4b25",
+        "GroupId": "b8cdfcc3-fbec-4457-bc31-3a8dff6f80fe",
+        "PreviousItemGuid": "c182ef1a-e40d-4630-9071-79eb1c0d8612"
+      },
+      {
+        "$type": "Sungero.Metadata.CoverEntityListActionMetadata, Sungero.Metadata",
+        "NameGuid": "c182ef1a-e40d-4630-9071-79eb1c0d8612",
+        "Name": "OpenConnectSettings",
+        "EntityTypeId": "21b14af8-d7f4-46bf-b3f1-4d059f0e80a2",
+        "GroupId": "b8cdfcc3-fbec-4457-bc31-3a8dff6f80fe"
+      }
+    ],
+    "Background": null,
+    "Footer": {
+      "NameGuid": "aee787c4-876f-407a-aa80-2eb0da80dec7",
+      "BackgroundPosition": "Stretch"
+    },
+    "Groups": [
+      {
+        "NameGuid": "b8cdfcc3-fbec-4457-bc31-3a8dff6f80fe",
+        "Name": "Integration",
+        "BackgroundPosition": "Stretch",
+        "IconName": "GroupIconIntegration_b8cdfcc3fbec4457bc313a8dff6f80fe.png",
+        "TabId": "40792ae4-8f01-4d26-9208-58bf8ba0b155"
+      },
+      {
+        "NameGuid": "e0e717c8-7705-4b1c-b529-a6948bbd8113",
+        "Name": "Error",
+        "BackgroundPosition": "Stretch",
+        "PreviousItemGuid": "b8cdfcc3-fbec-4457-bc31-3a8dff6f80fe",
+        "TabId": "40792ae4-8f01-4d26-9208-58bf8ba0b155"
+      }
+    ],
+    "Header": {
+      "NameGuid": "71eaef23-4e93-408d-85f0-4ba9f560104f",
+      "BackgroundPosition": "Stretch"
+    },
+    "RemoteControls": [],
+    "Tabs": [
+      {
+        "NameGuid": "40792ae4-8f01-4d26-9208-58bf8ba0b155",
+        "Name": "Main"
+      }
+    ]
+  },
+  "Dependencies": [
+    {
+      "Id": "ca6cfc0f-7123-44a8-a7e8-5c5962c8c43f",
+      "IsSolutionModule": true,
+      "MaxVersion": "",
+      "MinVersion": ""
+    }
+  ],
+  "ExplorerTreeOrder": [
+    {
+      "ItemId": "21b14af8-d7f4-46bf-b3f1-4d059f0e80a2"
+    }
+  ],
+  "IconResourcesKeys": [],
+  "Importance": "Medium",
+  "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "InterfaceNamespace": "vf.IntegrationSettings",
+  "IsolatedAssemblyName": "vf.IntegrationSettings.Isolated",
+  "IsolatedNamespace": "vf.IntegrationSettings.Isolated",
+  "PublicFunctions": [
+    {
+      "Name": "CheckCurrentUserIsAdmin",
+      "Placement": "Shared",
+      "ReturnType": "global::System.Boolean",
+      "ReturnTypeFullName": "System.Boolean"
+    }
+  ],
+  "PublicStructures": [],
+  "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
+  "ResourceInterfaceNamespace": "vf.IntegrationSettings",
+  "ResourcesKeys": [
+    "Bank",
+    "Contract",
+    "Counterparties",
+    "Departments",
+    "Employee",
+    "PaymentAccounts",
+    "Voyages",
+    "BudgetItems",
+    "People",
+    "Jobtitles",
+    "ProcessingErrorRecord",
+    "ObjectName",
+    "MessagesSendToProcessing",
+    "MessagesSendError",
+    "CompanyStructure",
+    "CFOArticleRegister",
+    "DepartmentRegister",
+    "OurPaymentAccount"
+  ],
+  "ServerAssemblyName": "vf.IntegrationSettings.Server",
+  "ServerNamespace": "vf.IntegrationSettings.Server",
+  "SharedAssemblyName": "vf.IntegrationSettings.Shared",
+  "SharedNamespace": "vf.IntegrationSettings.Shared",
+  "SpecialFolders": [],
+  "Version": "0.0.1.66",
+  "Widgets": [],
+  "Versions": [
+    {
+      "Type": "ModuleMetadata",
+      "Number": 8
+    },
+    {
+      "Type": "DomainApi",
+      "Number": 3
+    }
+  ]
+}

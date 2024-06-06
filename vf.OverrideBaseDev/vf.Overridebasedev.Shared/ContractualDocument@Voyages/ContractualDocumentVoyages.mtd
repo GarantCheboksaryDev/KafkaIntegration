@@ -1,0 +1,64 @@
+{
+  "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
+  "NameGuid": "ffcb6b37-5b93-4adf-a340-a6c0f5b9ce48",
+  "Name": "ContractualDocumentVoyages",
+  "AccessRightsMode": "NoRight",
+  "BaseGuid": "a3d38bf5-0414-41f6-bb33-a4621d2e5a60",
+  "CanBeNavigationPropertyType": true,
+  "Code": "ContractualDo2",
+  "ExtraSearchProperties": [],
+  "IsChildEntity": true,
+  "Properties": [
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "99232549-61f4-46cb-aa0b-3dc5f87f68ce",
+      "Name": "ContractualDocument",
+      "CanBeSearch": false,
+      "Code": "EDoc",
+      "EntityGuid": "d8d6f3af-1390-497c-a635-4defbc08e3ae",
+      "IsReferenceToRootEntity": true,
+      "IsShowedInList": false
+    },
+    {
+      "$type": "Sungero.Metadata.NavigationPropertyMetadata, Sungero.Metadata",
+      "NameGuid": "28383a08-a15a-4048-8a7a-29e3d73caf9d",
+      "Name": "Voyage",
+      "CanBeSearch": false,
+      "Code": "Voyage",
+      "EntityGuid": "f1d26776-6f38-4f1d-9e67-b553dfe4d6f7",
+      "FlatListInStandaloneLookup": true,
+      "HandledEvents": [
+        "LookupServer"
+      ],
+      "IsEnabled": false,
+      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.DropDownEditorToNavigationBinder",
+      "PreviousPropertyGuid": "99232549-61f4-46cb-aa0b-3dc5f87f68ce"
+    }
+  ],
+  "PublicStructures": [],
+  "RibbonCardMetadata": {
+    "NameGuid": "0b22b813-3e24-40f7-9dd2-3054b50aaf3c",
+    "Name": "RibbonCard",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": [],
+    "RibbonKind": "Card"
+  },
+  "RibbonCollectionMetadata": {
+    "NameGuid": "0d0496a5-8c63-4d3b-869b-cbbae15794e5",
+    "Name": "RibbonCollection",
+    "Categories": [],
+    "Elements": [],
+    "Groups": [],
+    "IsAncestorMetadata": true,
+    "Pages": []
+  },
+  "Versions": [
+    {
+      "Type": "EntityMetadata",
+      "Number": 12
+    }
+  ]
+}

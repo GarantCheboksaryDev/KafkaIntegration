@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Property_OldSedId" xml:space="preserve">
+    <value>ИД Doctrix</value>
+  </data>
+  <data name="Property_ProjectNumber" xml:space="preserve">
+    <value>Порядковый № договора</value>
+  </data>
+  <data name="Property_ContractDate" xml:space="preserve">
+    <value>Дата документа</value>
+  </data>
+  <data name="Property_OwnBank" xml:space="preserve">
+    <value>Банк</value>
+  </data>
+  <data name="Property_OwnPaymentAccount" xml:space="preserve">
+    <value>Расчетный счет</value>
+  </data>
+  <data name="Property_CounterpartyPaymentAccount" xml:space="preserve">
+    <value>Р/с контрагента</value>
+  </data>
+  <data name="Property_AdditionalCounterparty" xml:space="preserve">
+    <value>Доп. контрагенты</value>
+  </data>
+  <data name="Property_ValidFromEndType" xml:space="preserve">
+    <value>Срок действия</value>
+  </data>
+  <data name="Property_PaymentTerms" xml:space="preserve">
+    <value>Условие платежа</value>
+  </data>
+  <data name="Property_Provision" xml:space="preserve">
+    <value>Обеспечение</value>
+  </data>
+  <data name="Property_BankChargeType" xml:space="preserve">
+    <value>Тип банковской комиссии</value>
+  </data>
+  <data name="Property_ConditionBasePayment" xml:space="preserve">
+    <value>Условие определения базовой даты платежа</value>
+  </data>
+  <data name="Property_TaxAgent" xml:space="preserve">
+    <value>Налоговый агент</value>
+  </data>
+  <data name="Property_PurchasingProcedyreType" xml:space="preserve">
+    <value>Тип применяемой закуп. процедуры</value>
+  </data>
+  <data name="Property_IsConfidential" xml:space="preserve">
+    <value>Confidentially</value>
+  </data>
+  <data name="Property_CounterpartyNonresident" xml:space="preserve">
+    <value>Non-resident</value>
+  </data>
+  <data name="Property_IsOriginalContractAvailable" xml:space="preserve">
+    <value>Original contract available</value>
+  </data>
+  <data name="Property_ProjectInitiator" xml:space="preserve">
+    <value>Инициатор проекта</value>
+  </data>
+  <data name="Property_EventName" xml:space="preserve">
+    <value>Событие</value>
+  </data>
+  <data name="Property_Created" xml:space="preserve">
+    <value>Creation date</value>
+  </data>
+  <data name="Property_RegistrationDate" xml:space="preserve">
+    <value>Registration date</value>
+  </data>
+  <data name="Property_TripartileContract" xml:space="preserve">
+    <value>Многосторонний договор</value>
+  </data>
+  <data name="Property_StartDate" xml:space="preserve">
+    <value>Начало вып. работ
+(оказания услуг)</value>
+  </data>
+  <data name="Property_EndDate" xml:space="preserve">
+    <value>Окончание вып. работ
+(оказания услуг)</value>
+  </data>
+  <data name="Property_IsProgramCounterpartyNumber" xml:space="preserve">
+    <value>Программное заполнение "№ контрагента"</value>
+  </data>
+  <data name="Property_CurrencyControl" xml:space="preserve">
+    <value>Installed on the currency control</value>
+  </data>
+  <data name="Property_Currency" xml:space="preserve">
+    <value>Contract currency</value>
+  </data>
+  <data name="Property_PaymentCurrencies" xml:space="preserve">
+    <value>Payment currency</value>
+  </data>
+  <data name="Property_ContractKind" xml:space="preserve">
+    <value>Вид договора</value>
+  </data>
+  <data name="Property_ProjectCustom" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="Property_NeedTransferToSudk" xml:space="preserve">
+    <value>Передавать в СУДК</value>
+  </data>
+  <data name="Property_TransferedToSudk" xml:space="preserve">
+    <value>Передано в СУДК</value>
+  </data>
+  <data name="Property_WithDisagreementsProtocols" xml:space="preserve">
+    <value>С протоколом разногласий</value>
+  </data>
+  <data name="Property_ContractUniqueNumber" xml:space="preserve">
+    <value>УНК</value>
+  </data>
+  <data name="Property_Voyages" xml:space="preserve">
+    <value>Рейсы</value>
+  </data>
+  <data name="Property_CheckingResultSB" xml:space="preserve">
+    <value>Результат пров. СБ</value>
+  </data>
+  <data name="Enum_CheckingResultSB_SmallOperation" xml:space="preserve">
+    <value>Одобрен для малоценных операций</value>
+  </data>
+  <data name="Enum_CheckingResultSB_NotApproved" xml:space="preserve">
+    <value>Не одобрен</value>
+  </data>
+  <data name="Property_CheckingResultSpark" xml:space="preserve">
+    <value>Результат пров. СПАРК</value>
+  </data>
+  <data name="Enum_CheckingResultSpark_Green" xml:space="preserve">
+    <value>Зеленый</value>
+  </data>
+  <data name="Enum_CheckingResultSpark_Yellow" xml:space="preserve">
+    <value>Желтый</value>
+  </data>
+  <data name="Enum_CheckingResultSpark_Red" xml:space="preserve">
+    <value>Красный</value>
+  </data>
+  <data name="Property_SpecialList" xml:space="preserve">
+    <value>Включен в спец список</value>
+  </data>
+  <data name="Enum_SpecialList_Black" xml:space="preserve">
+    <value>Черный</value>
+  </data>
+  <data name="Enum_SpecialList_Grey" xml:space="preserve">
+    <value>Серый</value>
+  </data>
+  <data name="Enum_SpecialList_White" xml:space="preserve">
+    <value>Белый</value>
+  </data>
+  <data name="Property_VatComment" xml:space="preserve">
+    <value>Комментарий к НДС</value>
+  </data>
+  <data name="Property_PaymentType" xml:space="preserve">
+    <value>Тип оплаты</value>
+  </data>
+  <data name="Property_RelationshipType" xml:space="preserve">
+    <value>Тип взаимоотношений</value>
+  </data>
+  <data name="Property_IncotermsKind" xml:space="preserve">
+    <value>Инкотермс</value>
+  </data>
+  <data name="Property_ContractConcludingBasis" xml:space="preserve">
+    <value>Основание заключения договора</value>
+  </data>
+  <data name="Property_ErpDatabookName" xml:space="preserve">
+    <value>Наим. справочника 1С:ERP</value>
+  </data>
+  <data name="Property_AdvanceTaxInvoiceServiceName" xml:space="preserve">
+    <value>Наименование услуги для авансового счета-фактуры</value>
+  </data>
+  <data name="Resource_2ba45a3701c04b3e908a465e75956a24" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_2ba45a3701c04b3e908a465e75956a24_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_c248aafe8e354a2486a2364ce117ba5d" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_c248aafe8e354a2486a2364ce117ba5d_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_f47228b360b84bd3a8a58c7469cc8619" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_f47228b360b84bd3a8a58c7469cc8619_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_6a993f552422481595e476b5a73cb9ae" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_6a993f552422481595e476b5a73cb9ae_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_89c5c5d1362044b082a83f12ccaf3a47" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_89c5c5d1362044b082a83f12ccaf3a47_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_560833ba36b94d9cb995526605b7a18c" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_560833ba36b94d9cb995526605b7a18c_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_fffc387555a7467c922d11409a8ffc93" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_fffc387555a7467c922d11409a8ffc93_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_ebca0b017fba4bb8be2c2aab0cbd5311" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_ebca0b017fba4bb8be2c2aab0cbd5311_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Resource_407c65241df4449eb1d65df162b9d019" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Control_407c65241df4449eb1d65df162b9d019_EmptyText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_OurSignatory" xml:space="preserve">
+    <value>Signed by</value>
+  </data>
+  <data name="Property_Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Property_BusinessUnit" xml:space="preserve">
+    <value>Business unit</value>
+  </data>
+  <data name="ControlGroup_519f2394febe4501adcaa34ee883d986" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="Property_CounterpartySignatory" xml:space="preserve">
+    <value>Signed by</value>
+  </data>
+  <data name="Property_CounterpartyBank" xml:space="preserve">
+    <value>Банк</value>
+  </data>
+  <data name="Property_SendToCurrencyControl" xml:space="preserve">
+    <value>Отправлен на валютный контроль</value>
+  </data>
+  <data name="Action_SendToCurrencyControl" xml:space="preserve">
+    <value>Установить на валютный контроль</value>
+  </data>
+  <data name="Action_SendToCurrencyControlDescription" xml:space="preserve">
+    <value>Установить на валютный контроль</value>
+  </data>
+  <data name="Action_SendToCurrencyControlHint" xml:space="preserve">
+    <value>Установить на валютный контроль</value>
+  </data>
+  <data name="Action_SendToCurrencyControlConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SendToCurrencyControlConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SendForReview" xml:space="preserve">
+    <value>To Manager for Review</value>
+  </data>
+  <data name="Property_CFO" xml:space="preserve">
+    <value>ЦФО</value>
+  </data>
+  <data name="Property_CFOCode" xml:space="preserve">
+    <value>Код ЦФО</value>
+  </data>
+  <data name="Property_BKBDR" xml:space="preserve">
+    <value>Статья БК</value>
+  </data>
+  <data name="Property_MVZ" xml:space="preserve">
+    <value>МВЗ</value>
+  </data>
+  <data name="Property_MVZCode" xml:space="preserve">
+    <value>Код МВЗ</value>
+  </data>
+  <data name="Property_MailForAct" xml:space="preserve">
+    <value>Эл. почта для отправки акта сверки</value>
+  </data>
+  <data name="Property_AdvanceClosedDate" xml:space="preserve">
+    <value>Дата закрытия аванса</value>
+  </data>
+  <data name="Property_ContractType" xml:space="preserve">
+    <value>Тип договора</value>
+  </data>
+  <data name="Enum_ContractType_Income" xml:space="preserve">
+    <value>Доходный</value>
+  </data>
+  <data name="Enum_ContractType_Outcome" xml:space="preserve">
+    <value>Расходный</value>
+  </data>
+  <data name="Property_CurrencyControlSetDate" xml:space="preserve">
+    <value>Срок постановки на валютный контроль</value>
+  </data>
+  <data name="Property_CurrencyControlRemoveDate" xml:space="preserve">
+    <value>Срок снятия с валютного контроля</value>
+  </data>
+  <data name="Property_SignDate" xml:space="preserve">
+    <value>Дата подписания</value>
+  </data>
+  <data name="Property_IsAutomaticValidFromEndType" xml:space="preserve">
+    <value>Срок действия заполнен автоматичексие</value>
+  </data>
+  <data name="Property_Propertyvf" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Property_SignDateTime" xml:space="preserve">
+    <value>Дата подписания (С временем)</value>
+  </data>
+  <data name="Property_IsForceMajeure" xml:space="preserve">
+    <value>Форс-мажор</value>
+  </data>
+  <data name="Property_IsExtendedOneYear" xml:space="preserve">
+    <value>Продлен на один год</value>
+  </data>
+  <data name="Property_Offer" xml:space="preserve">
+    <value>Оферта</value>
+  </data>
+  <data name="Property_MovementGoodsAcrossBorder" xml:space="preserve">
+    <value>Перемещение товаров через границу</value>
+  </data>
+  <data name="Action_SendContractToKafka" xml:space="preserve">
+    <value>Отправить договор в Kafka</value>
+  </data>
+  <data name="Action_SendContractToKafkaDescription" xml:space="preserve">
+    <value>Отправить договор в Kafka</value>
+  </data>
+  <data name="Action_SendContractToKafkaHint" xml:space="preserve">
+    <value>Отправить договор в Kafka</value>
+  </data>
+  <data name="Action_SendContractToKafkaConfirmationMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Action_SendContractToKafkaConfirmationDescription" xml:space="preserve">
+    <value />
+  </data>
+</root>
