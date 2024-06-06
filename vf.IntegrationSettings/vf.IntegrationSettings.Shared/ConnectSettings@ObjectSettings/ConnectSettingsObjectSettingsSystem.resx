@@ -67,18 +67,6 @@
   <data name="Enum_ObjectName_Counterparty" xml:space="preserve">
     <value>Контрагенты</value>
   </data>
-  <data name="Enum_ObjectName_PaymentAccount" xml:space="preserve">
-    <value>Расчетные счета</value>
-  </data>
-  <data name="Enum_ObjectName_Department" xml:space="preserve">
-    <value>Подразделения</value>
-  </data>
-  <data name="Enum_ObjectName_Employee" xml:space="preserve">
-    <value>Сотрудники</value>
-  </data>
-  <data name="Enum_ObjectName_Contract" xml:space="preserve">
-    <value>Договоры</value>
-  </data>
   <data name="Property_MessageType" xml:space="preserve">
     <value>Тип сообщения</value>
   </data>
@@ -99,26 +87,5 @@
   </data>
   <data name="Enum_ActionType_Delete" xml:space="preserve">
     <value>Удаление</value>
-  </data>
-  <data name="Enum_ObjectName_Person" xml:space="preserve">
-    <value>Персоны</value>
-  </data>
-  <data name="Enum_ObjectName_Voyage" xml:space="preserve">
-    <value>Рейсы</value>
-  </data>
-  <data name="Enum_ObjectName_BudgetItem" xml:space="preserve">
-    <value>Статьи бюджета</value>
-  </data>
-  <data name="Enum_ObjectName_CompanyStruct" xml:space="preserve">
-    <value>ЦФО/МВЗ</value>
-  </data>
-  <data name="Enum_ObjectName_CFOArticle" xml:space="preserve">
-    <value>ЦФО-Статьи БК</value>
-  </data>
-  <data name="Enum_ObjectName_RegisterDeprt" xml:space="preserve">
-    <value>Подразделение-ЦФО-МВЗ-Менеджер</value>
-  </data>
-  <data name="Enum_ObjectName_OurPaymentAccou" xml:space="preserve">
-    <value>Расчетные счета нашей организации</value>
   </data>
 </root>

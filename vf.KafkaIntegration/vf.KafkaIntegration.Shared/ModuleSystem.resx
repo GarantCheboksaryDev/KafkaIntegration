@@ -73,12 +73,6 @@
   <data name="AsyncHandler_Description_376040a664de46a1bba9172438e31dca" xml:space="preserve">
     <value>Обновить информацию о банке</value>
   </data>
-  <data name="JobDisplayName_7968e50911794bd2b90847bcde5bebcb" xml:space="preserve">
-    <value>Kafka. Получить информацию о рейсах</value>
-  </data>
-  <data name="JobDescription_7968e50911794bd2b90847bcde5bebcb" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения информации о рейсах из брокера Kafka</value>
-  </data>
   <data name="AsyncHandler_Description_75e780e6a7414969a2f826cc2cb32c87" xml:space="preserve">
     <value>Обновить информацию о рейсе</value>
   </data>
@@ -91,35 +85,11 @@
   <data name="AsyncHandler_Description_808f6aa6c8ff4656b9b6d4d10d068870" xml:space="preserve">
     <value>Обновить информацию о котрагентах</value>
   </data>
-  <data name="JobDisplayName_55ca1cc5a84343329be99f0c7d069be5" xml:space="preserve">
-    <value>Kafka. Получить информацию о расчетных счетах</value>
-  </data>
-  <data name="JobDescription_55ca1cc5a84343329be99f0c7d069be5" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения информации о расчетных счетах из брокера Kafka</value>
-  </data>
   <data name="AsyncHandler_Description_f32a0b2ee868460f9341bb980b84a683" xml:space="preserve">
     <value>Обновить информацию о расчетных счетах</value>
   </data>
-  <data name="JobDisplayName_b3196d67da294a9d8c2c351d4d19f790" xml:space="preserve">
-    <value>Kafka. Получить информацию о статьях бюджета</value>
-  </data>
-  <data name="JobDescription_b3196d67da294a9d8c2c351d4d19f790" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения информации о статьях бюджета из брокера Kafka</value>
-  </data>
-  <data name="JobDisplayName_aaa21871cf1f4a6ab1a27d4d57dc2912" xml:space="preserve">
-    <value>Kafka. Получить информацию о персонах</value>
-  </data>
-  <data name="JobDescription_aaa21871cf1f4a6ab1a27d4d57dc2912" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения информации о персонах из брокера Kafka</value>
-  </data>
   <data name="AsyncHandler_Description_9882f233dbf24d22886546da3d003e14" xml:space="preserve">
     <value>Обновить информацию о персонах</value>
-  </data>
-  <data name="JobDisplayName_bfc6795a60e04a6d92be362f22ff946e" xml:space="preserve">
-    <value>Kafka. Получить информацию о сотрудниках</value>
-  </data>
-  <data name="JobDescription_bfc6795a60e04a6d92be362f22ff946e" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения информации о сотрудниках из брокера Kafka</value>
   </data>
   <data name="AsyncHandler_Description_60de78d99c6f436f8a1fb54a7af50c33" xml:space="preserve">
     <value>Обновить информацию о сотрудниках</value>
@@ -130,47 +100,17 @@
   <data name="AsyncHandler_Description_a635fb996816481687478e8da96bdf9e" xml:space="preserve">
     <value>Обновить информацию о подразделениях</value>
   </data>
-  <data name="JobDisplayName_74a1179866b14bc8ac6db68a08641187" xml:space="preserve">
-    <value>Kafka. Получить информацию о подразделениях</value>
-  </data>
-  <data name="JobDescription_74a1179866b14bc8ac6db68a08641187" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения информации о подразделениях из брокера Kafka</value>
-  </data>
-  <data name="JobDisplayName_2d2bcb11e7c54bf48191f8b1d3c2ca5d" xml:space="preserve">
-    <value>Kafka. Получить информацию о ЦФО/МВЗ</value>
-  </data>
-  <data name="JobDescription_2d2bcb11e7c54bf48191f8b1d3c2ca5d" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения информации о ЦФО/МВЗ из брокера Kafka</value>
-  </data>
   <data name="AsyncHandler_Description_a51675b3b1fc44aaa78ca59294b6ceb3" xml:space="preserve">
     <value>Обновить информацию о ЦФО/МВЗ</value>
   </data>
-  <data name="JobDisplayName_2fdc1c377d8846e89fa93dad2dd270a6" xml:space="preserve">
-    <value>Kafka. Получить регистр свзяи ЦФО-Статьи БК</value>
-  </data>
-  <data name="JobDescription_2fdc1c377d8846e89fa93dad2dd270a6" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения регистра свзяи ЦФО-Статьи БК из брокера Kafka</value>
-  </data>
   <data name="AsyncHandler_Description_1301c3ad7b1d44f4a8ad8c023b509218" xml:space="preserve">
     <value>Обновить информацию о связи ЦФО-статьи БК</value>
-  </data>
-  <data name="JobDisplayName_9d63cb69cbf74d91bc2b232f5b6c9773" xml:space="preserve">
-    <value>Kafka. Получить регистр свзяи подразделение-ЦФО-МВЗ-Менеджер</value>
-  </data>
-  <data name="JobDescription_9d63cb69cbf74d91bc2b232f5b6c9773" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения регистра свзяи подразделение-ЦФО-МВЗ-Менеджер из брокера Kafka</value>
   </data>
   <data name="AsyncHandler_Description_4336ec79fe604d0bafc133ad9966722d" xml:space="preserve">
     <value>Обновить информацию о связи Подразделение-ЦФО-МВЗ-Менеджер</value>
   </data>
   <data name="AsyncHandler_Description_511ca3e143e3410eaca1ebf9cafd1c0d" xml:space="preserve">
     <value>Отправить информацию о договоре</value>
-  </data>
-  <data name="JobDisplayName_3efb5f0288f542deb3e38b54853d86b1" xml:space="preserve">
-    <value>Kafka. Получить информацию о расчетных счетах нашей организации</value>
-  </data>
-  <data name="JobDescription_3efb5f0288f542deb3e38b54853d86b1" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения информации о расчетных счетах наших организаций из брокера Kafka</value>
   </data>
   <data name="AsyncHandler_Description_2932dbcb8b334141b8d53813353977fd" xml:space="preserve">
     <value>Обновить информацию о расчетных счетах нашей организации</value>

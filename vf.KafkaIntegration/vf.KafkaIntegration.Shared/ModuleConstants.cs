@@ -22,6 +22,16 @@ namespace vf.KafkaIntegration.Constants
       /// </summary>
       [Public]
       public const string DirectumIdPrefix = "_DRX";
+      
+      /// <summary>
+      /// Код Альфа 3 для России.
+      /// </summary>
+      public const string RuAlphaCode3 = "RUS";
+      
+      /// <summary>
+      /// Признак, что КА - Физ.лицо.
+      /// </summary>
+      public const string PersonReferenceName = "Person";
     }
 
     /// <summary>

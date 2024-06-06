@@ -79,12 +79,6 @@
   <data name="AsyncHandler_Description_75e780e6a7414969a2f826cc2cb32c87" xml:space="preserve">
     <value>Обновить информацию о рейсе</value>
   </data>
-  <data name="JobDescription_55ca1cc5a84343329be99f0c7d069be5" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения информации о расчетных счетах из брокера Kafka</value>
-  </data>
-  <data name="JobDescription_b3196d67da294a9d8c2c351d4d19f790" xml:space="preserve">
-    <value>Фоновый процесс предназначен для получения информации о статьях бюджета из брокера Kafka</value>
-  </data>
   <data name="AsyncHandler_Description_13d72dc26a174441a150f48c73d8ebb5" xml:space="preserve">
     <value>AsyncHandler</value>
   </data>
