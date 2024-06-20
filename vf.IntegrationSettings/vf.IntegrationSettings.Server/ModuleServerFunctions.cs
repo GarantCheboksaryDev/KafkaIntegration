@@ -19,7 +19,7 @@ namespace vf.IntegrationSettings.Server
       var objectEnumeration = Functions.ConnectSettings.GetKeyValueFromObjectNames(objectName);
       if (objectEnumeration.HasValue)
       {
-        var queueItemsWithError = KafkaIntegration.PublicFunctions.KafkaQueueItem.GetKaffkaItemQueueForError(objectEnumeration.Value);
+        var queueItemsWithError = KafkaIntegration.PublicFunctions.KafkaQueueItem.GetKafkaItemQueueForError(objectEnumeration.Value);
         if (objectEnumeration.Value == IntegrationSettings.ConnectSettingsObjectSettings.ObjectName.Bank)
           KafkaIntegration.PublicFunctions.KafkaQueueItem.CreateAsynchForBankMessage(queueItemsWithError);
         else if (objectEnumeration.Value == IntegrationSettings.ConnectSettingsObjectSettings.ObjectName.Counterparty)

@@ -15,8 +15,6 @@ namespace vf.KafkaIntegration.Server
     /// <param name="objectName">Наименование объекта чтения.</param>
     public static void GetMessagesAndCreateQueueItem(Enumeration objectName)
     {
-      var prefix = string.Format("GetMessagesAndCreateQueueItem. {0}. ", objectName);
-      
       var settings = IntegrationSettings.PublicFunctions.ConnectSettings.GetSettingsKafkaConnector();
       if (settings != null)
       {
@@ -26,21 +24,29 @@ namespace vf.KafkaIntegration.Server
                                                       && x.ActionType == IntegrationSettings.ConnectSettingsObjectSettings.ActionType.CreateUpdate).Select(x => x.TopicName).FirstOrDefault();
         
         // Создать экземлпяр коннектора к Kafka.
-        KaffkaNet.Connector connector = Functions.Module.CreateKaffkaConnector(settings);
+        KafkaNet.Connector connector = Functions.Module.CreateKafkaConnector(settings);
         try
         {
           // Создать экземпляр для чтения сообщений из Kafka.
-          var messages = new List<KaffkaNet.ResponseMessages>();
+          var messages = new List<KafkaNet.Messages>();
           
           if (!string.IsNullOrEmpty(topicName))
           {
-            var addedMessages = connector.ReadMessagesFromTopic(connector, topicName);
+            var response = connector.ReadMessagesFromTopic(connector, topicName);
             
+            var error = response.Error;
+            if (!string.IsNullOrEmpty(error))
+            {
+              Functions.Module.WriteToLog(string.Format("Во время получения сообщений возникла ошибка: {0}.", error), true);
+              return;
+            }
+            
+            var addedMessages = response.Messages;
             if (addedMessages.Any())
               messages.AddRange(addedMessages);
           }
           else
-            Logger.DebugFormat("{0}Не найдены настройки для топика добавления/создания.", prefix);
+            Functions.Module.WriteToLog("Не найдены настройки для топика добавления/создания.", false);
           
           if (messages.Any())
           {
@@ -53,7 +59,7 @@ namespace vf.KafkaIntegration.Server
               }
               catch(Exception ex)
               {
-                Logger.ErrorFormat("{0}Во время обработки произошла ошибка: {1}.", prefix, ex);
+                Functions.Module.WriteToLog(string.Format("Во время обработки произошла ошибка: {0}.", ex), true);
                 continue;
               }
             }
@@ -61,12 +67,12 @@ namespace vf.KafkaIntegration.Server
         }
         catch(Exception ex)
         {
-          Logger.ErrorFormat("{0}Во время обработки произошла ошибка: {1}.", prefix, ex);
+          Functions.Module.WriteToLog(string.Format("Во время обработки произошла ошибка: {0}.", ex), true);
           return;
         }
       }
       else
-        Logger.ErrorFormat("{0}Не найдены настройки для подключения к Kafka.", prefix);
+        Functions.Module.WriteToLog("Не найдены настройки для подключения к Kafka.", true);
     }
     
     /// <summary>
@@ -76,7 +82,7 @@ namespace vf.KafkaIntegration.Server
     /// <param name="objectName">Тип объекта.</param>
     /// <param name="topicName">Наименование топика из kafka.</param>
     /// <param name="messageValue">Содержание сообщения.</param>
-    public static void CreateKafkaQueueItem(KaffkaNet.ResponseMessages message, Enumeration objectName, string topicName, string messageValue)
+    public static void CreateKafkaQueueItem(KafkaNet.Messages message, Enumeration objectName, string topicName, string messageValue)
     {
       var queueItem = KafkaQueueItems.Create();
       queueItem.ExternalId = !string.IsNullOrEmpty(message.Key) ? message.Key.Trim() : message.MessageId;
@@ -95,7 +101,7 @@ namespace vf.KafkaIntegration.Server
     /// </summary>
     /// <param name="objectName">Имя объекта.</param>
     /// <returns>Список записей справочника "Очереди сообщения".</returns>
-    public static IQueryable<IKafkaQueueItem> GetKaffkaItemQueueForProccess(Enumeration objectName)
+    public static IQueryable<IKafkaQueueItem> GetKafkaItemQueueForProccess(Enumeration objectName)
     {
       return KafkaQueueItems.GetAll(x => x.ObjectName == objectName && (x.ProcessingStatus == KafkaIntegration.KafkaQueueItem.ProcessingStatus.NotProcessed));
     }
@@ -106,7 +112,7 @@ namespace vf.KafkaIntegration.Server
     /// <param name="objectName">Имя объекта.</param>
     /// <returns>Список записей справочника "Очереди сообщения".</returns>
     [Public]
-    public static IQueryable<IKafkaQueueItem> GetKaffkaItemQueueForError(Enumeration objectName)
+    public static IQueryable<IKafkaQueueItem> GetKafkaItemQueueForError(Enumeration objectName)
     {
       return KafkaQueueItems.GetAll(x => x.ObjectName == objectName && (x.ProcessingStatus == KafkaIntegration.KafkaQueueItem.ProcessingStatus.Error || x.ProcessingStatus == KafkaIntegration.KafkaQueueItem.ProcessingStatus.NotProcessed));
     }
@@ -158,8 +164,6 @@ namespace vf.KafkaIntegration.Server
     /// <returns>Созданное сообщение.</returns>
     public static IKafkaQueueItem CreateKafkaQueueItemForSend(string jsonValue, string topicName, Enumeration objectName)
     {
-      var prefix = string.Format("CreateKafkaQueueItem. {0}. ", topicName);
-      
       var queueItem = KafkaQueueItems.Create();
       try
       {
@@ -172,7 +176,7 @@ namespace vf.KafkaIntegration.Server
       }
       catch (Exception ex)
       {
-        Logger.ErrorFormat("{0}Во время сохранения записи возникла ошибка.", ex);
+        Functions.Module.WriteToLog(string.Format("Во время сохранения записи возникла ошибка: {0}.", ex), true);
       }
       
       return queueItem;
@@ -188,8 +192,6 @@ namespace vf.KafkaIntegration.Server
     /// <returns>Созданное сообщение.</returns>
     public static IKafkaQueueItem CreateKafkaQueueItemForSend(string jsonValue, string topicName, string keyValue, Enumeration objectName)
     {
-      var prefix = string.Format("CreateKafkaQueueItem. {0}. ", topicName);
-      
       var queueItem = KafkaQueueItems.Create();
       try
       {
@@ -203,7 +205,7 @@ namespace vf.KafkaIntegration.Server
       }
       catch (Exception ex)
       {
-        Logger.ErrorFormat("{0}Во время сохранения записи возникла ошибка.", ex);
+        Functions.Module.WriteToLog(string.Format("Во время сохранения записи возникла ошибка: {0}.", ex), true);
       }
       
       return queueItem;
@@ -220,7 +222,7 @@ namespace vf.KafkaIntegration.Server
       var password = connectSettings.Password;
       var logPath = connectSettings.LogFilePath;
       
-      var connector = new KaffkaNet.KafkaProducer(bootstrapServers, login, password, logPath);
+      var connector = new KafkaNet.KafkaProducer(bootstrapServers, login, password, logPath);
       
       var sendResult = connector.ProduceMessage(connector, _obj.TopicName, _obj.JsonBodyValue, _obj.ExternalId);
       

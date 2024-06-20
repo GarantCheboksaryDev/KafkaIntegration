@@ -8,6 +8,6 @@ namespace vf.KafkaIntegration.Client
 {
   public class ModuleFunctions
   {
-
+    
   }
 }

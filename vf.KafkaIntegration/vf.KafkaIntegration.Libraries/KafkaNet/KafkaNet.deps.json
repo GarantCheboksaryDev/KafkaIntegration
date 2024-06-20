@@ -7,13 +7,13 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "KaffkaNet/1.0.0": {
+      "KafkaNet/1.0.0": {
         "dependencies": {
           "Confluent.Kafka": "2.3.0",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
-          "KaffkaNet.dll": {}
+          "KafkaNet.dll": {}
         }
       },
       "Confluent.Kafka/2.3.0": {
@@ -75,7 +75,7 @@
     }
   },
   "libraries": {
-    "KaffkaNet/1.0.0": {
+    "KafkaNet/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -368,7 +368,7 @@
       "ReturnTypeFullName": "System.Void"
     },
     {
-      "Name": "GetKaffkaItemQueueForError",
+      "Name": "GetKafkaItemQueueForError",
       "Parameters": [
         {
           "Name": "objectName",

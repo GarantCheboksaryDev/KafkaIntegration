@@ -39,5 +39,10 @@ namespace vf.KafkaIntegration.Constants
     /// </summary>
     [Public]
     public const int MaxRetriesAmount = 5;
+    
+    /// <summary>
+    /// Регулярное выражение для ФИО.
+    /// </summary>
+    public const string FIOPattern = @"^(\S+)(?<!\.)\s*(\S+)(?<!\.)\s*(\S*)(?<!\.)$";
   }
 }

@@ -8,27 +8,24 @@ namespace vf.KafkaIntegration.Server
 {
   public class ModuleJobs
   {
-
     /// <summary>
     /// Получить информацию о контрагентах.
     /// </summary>
     public virtual void GetCounterpartiesInfoFromKafka()
-    {
-      var prefix = "GetCounterpartiesInfoFromKafka. ";
-      
-      Logger.DebugFormat("{0}Старт процесса.", prefix);
+    {      
+      Functions.Module.WriteToLog("Старт процесса.", false);
       
       // Прочитать сообщения и занести в очередь сообщений.
       Functions.KafkaQueueItem.GetMessagesAndCreateQueueItem(IntegrationSettings.ConnectSettingsObjectSettings.ObjectName.Counterparty);
       
       // Обработать сообщения и занести данные в DirectumRx.
-      var messagesQueue = Functions.KafkaQueueItem.GetKaffkaItemQueueForProccess(IntegrationSettings.ConnectSettingsObjectSettings.ObjectName.Counterparty);
+      var messagesQueue = Functions.KafkaQueueItem.GetKafkaItemQueueForProccess(IntegrationSettings.ConnectSettingsObjectSettings.ObjectName.Counterparty);
       
-      Logger.DebugFormat("{0}Количество сообщений к обработке: {1}.", prefix, messagesQueue.Count());
+      Functions.Module.WriteToLog(string.Format("Количество сообщений к обработке: {0}.", messagesQueue.Count()), false);
       
       Functions.KafkaQueueItem.CreateAsynchForCounterpartiesMessage(messagesQueue);
       
-      Logger.DebugFormat("{0}Конец процесса.", prefix);
+      Functions.Module.WriteToLog("Конец процесса.", false);
       
     }
     
@@ -36,22 +33,20 @@ namespace vf.KafkaIntegration.Server
     /// Получить информацию о банках.
     /// </summary>
     public virtual void GetBankInfoFromKafka()
-    {
-      var prefix = "GetBankInfoFromKafka. ";
-      
-      Logger.DebugFormat("{0}Старт процесса.", prefix);
+    {      
+      Functions.Module.WriteToLog("Старт процесса.", false);
       
       // Прочитать сообщения и занести в очередь сообщений.
       Functions.KafkaQueueItem.GetMessagesAndCreateQueueItem(IntegrationSettings.ConnectSettingsObjectSettings.ObjectName.Bank);
 
-      var messagesQueue = Functions.KafkaQueueItem.GetKaffkaItemQueueForProccess(IntegrationSettings.ConnectSettingsObjectSettings.ObjectName.Bank);
+      var messagesQueue = Functions.KafkaQueueItem.GetKafkaItemQueueForProccess(IntegrationSettings.ConnectSettingsObjectSettings.ObjectName.Bank);
       
-      Logger.DebugFormat("{0}Количество сообщений к обработке: {1}.", prefix, messagesQueue.Count());
+      Functions.Module.WriteToLog(string.Format("Количество сообщений к обработке: {0}.", messagesQueue.Count()), false);
       
       // Обработать сообщения и занести данные в DirectumRx.
       Functions.KafkaQueueItem.CreateAsynchForBankMessage(messagesQueue);
       
-      Logger.DebugFormat("{0}Конец процесса.", prefix);
+      Functions.Module.WriteToLog("Конец процесса.", false);
     }
   }
 }
