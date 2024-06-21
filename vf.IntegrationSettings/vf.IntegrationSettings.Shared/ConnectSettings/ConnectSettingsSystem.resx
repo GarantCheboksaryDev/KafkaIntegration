@@ -115,7 +115,4 @@
   <data name="Property_LogFilePath" xml:space="preserve">
     <value>Путь к лог-файлам</value>
   </data>
-  <data name="Enum_SystemName_CBRF" xml:space="preserve">
-    <value>Сайт ЦБ</value>
-  </data>
 </root>

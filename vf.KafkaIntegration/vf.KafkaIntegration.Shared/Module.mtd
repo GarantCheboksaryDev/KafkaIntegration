@@ -171,35 +171,6 @@
       "ReturnTypeFullName": "System.Boolean"
     },
     {
-      "Name": "GetPersonByGuid",
-      "Parameters": [
-        {
-          "Name": "guid1C",
-          "ParameterType": "global::System.String",
-          "ParameterTypeFullName": "System.String"
-        }
-      ],
-      "ReturnType": "global::Sungero.Parties.IPerson",
-      "ReturnTypeFullName": "Sungero.Parties.IPerson, Sungero.Domain.Interfaces"
-    },
-    {
-      "Name": "GetPersonSynch",
-      "Parameters": [
-        {
-          "Name": "guid1C",
-          "ParameterType": "global::System.String",
-          "ParameterTypeFullName": "System.String"
-        },
-        {
-          "Name": "tin",
-          "ParameterType": "global::System.String",
-          "ParameterTypeFullName": "System.String"
-        }
-      ],
-      "ReturnType": "global::Sungero.Parties.IPerson",
-      "ReturnTypeFullName": "Sungero.Parties.IPerson, Sungero.Domain.Interfaces"
-    },
-    {
       "Name": "IsDirectumId",
       "Parameters": [
         {
@@ -349,7 +320,13 @@
   ],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "vf.KafkaIntegration",
-  "ResourcesKeys": [],
+  "ResourcesKeys": [
+    "CounterpartiesMarkIsNull",
+    "EmailIsLengthOutWeigth",
+    "CounterpartiesAutoUploadFrom1C",
+    "BankAutoUploadFrom1C",
+    "NotSetMainPropertiesBank"
+  ],
   "ServerAssemblyName": "vf.KafkaIntegration.Server",
   "ServerNamespace": "vf.KafkaIntegration.Server",
   "SharedAssemblyName": "vf.KafkaIntegration.Shared",

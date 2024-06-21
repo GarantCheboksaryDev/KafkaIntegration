@@ -189,11 +189,6 @@
           "NameGuid": "0792a76e-d093-485f-bf6d-47b98468d982",
           "Name": "Kafka",
           "Code": "Kafka"
-        },
-        {
-          "NameGuid": "31c49b7e-279a-424c-a888-865f0be6a20a",
-          "Name": "CBRF",
-          "Code": "CBRF"
         }
       ],
       "HandledEvents": [
@@ -252,7 +247,10 @@
       "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
       "NameGuid": "3a538707-91bf-4307-bd02-dfe75b7bdb0d",
       "Name": "LogFilePath",
+      "CanBeSearch": false,
       "Code": "LogFilePath",
+      "IsShowedInList": false,
+      "IsVisibility": false,
       "Length": 999,
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "7651b491-531f-4ddf-bc50-321aac3c7a20"

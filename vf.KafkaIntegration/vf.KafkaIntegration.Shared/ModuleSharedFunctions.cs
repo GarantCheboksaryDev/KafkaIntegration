@@ -29,6 +29,5 @@ namespace vf.KafkaIntegration.Shared
     {
       return Id.Replace(Constants.Module.SystemCodes.DirectumIdPrefix, string.Empty);
     }
-
   }
 }
