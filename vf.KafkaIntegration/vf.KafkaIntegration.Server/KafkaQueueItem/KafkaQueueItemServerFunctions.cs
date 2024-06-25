@@ -220,7 +220,7 @@ namespace vf.KafkaIntegration.Server
       var bootstrapServers = connectSettings.WebServiceAddressee;
       var login = connectSettings.Login;
       var password = connectSettings.Password;
-      var logPath = connectSettings.LogFilePath;
+      var logPath = string.Empty;
       
       var connector = new KafkaNet.KafkaProducer(bootstrapServers, login, password, logPath);
       

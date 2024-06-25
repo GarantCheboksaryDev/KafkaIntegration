@@ -16,7 +16,6 @@ namespace vf.KafkaIntegration.Server
     {
       var bootstrapServers = string.Empty;
       var consumerGroupId = string.Empty;
-      var logPath = string.Empty;
       var password = string.Empty;
       var userName = string.Empty;
       
@@ -26,7 +25,6 @@ namespace vf.KafkaIntegration.Server
       {
         bootstrapServers = settings.WebServiceAddressee;
         consumerGroupId = settings.ConsumerGroupId;
-        logPath = settings.LogFilePath;
         password = settings.Password;
         userName = settings.Login;
       }
@@ -334,9 +332,6 @@ namespace vf.KafkaIntegration.Server
           firstName = fullNameRegex.Groups[2].Value;
           
           middleName = fullNameRegex.Groups[3].Value;
-          firstName = fullNameRegex.Groups[1].Value;
-          lastName = fullNameRegex.Groups[3].Value;
-          middleName = string.Empty;
           
           if (lastName == string.Empty)
             lastName = fullNameRegex.Groups[2].Value;

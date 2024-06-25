@@ -112,7 +112,4 @@
   <data name="Property_ConsumerGroupId" xml:space="preserve">
     <value>Наименование получателя</value>
   </data>
-  <data name="Property_LogFilePath" xml:space="preserve">
-    <value>Путь к лог-файлам</value>
-  </data>
 </root>

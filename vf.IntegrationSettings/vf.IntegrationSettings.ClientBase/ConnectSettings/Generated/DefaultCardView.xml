@@ -54,7 +54,7 @@
             <property name="Name">ConnectSettings_ObjectSettings_ActionType</property>
             <property name="FieldName">ActionType</property>
             <property name="VisibleIndex">3</property>
-            <property name="Width">123</property>
+            <property name="Width">122</property>
             <property name="ActualWidth">11*</property>
           </property>
         </property>

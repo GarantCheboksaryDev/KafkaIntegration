@@ -136,19 +136,6 @@
           "RowNumber": 2,
           "RowSpan": 1,
           "Settings": []
-        },
-        {
-          "$type": "Sungero.Metadata.ControlMetadata, Sungero.Metadata",
-          "NameGuid": "c24db94d-b06b-43c9-99bd-6bda7f56b416",
-          "Name": "LogFilePath",
-          "ColumnNumber": 1,
-          "ColumnSpan": 1,
-          "DataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-          "ParentGuid": "e4d66c35-5ffe-4c8f-aa44-8ae918fe80bf",
-          "PropertyGuid": "3a538707-91bf-4307-bd02-dfe75b7bdb0d",
-          "RowNumber": 2,
-          "RowSpan": 1,
-          "Settings": []
         }
       ]
     }
@@ -242,18 +229,6 @@
       "Code": "ConsumerGroupI",
       "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
       "PreviousPropertyGuid": "a75300a9-a7db-4729-abf4-f5b1dc15c194"
-    },
-    {
-      "$type": "Sungero.Metadata.StringPropertyMetadata, Sungero.Metadata",
-      "NameGuid": "3a538707-91bf-4307-bd02-dfe75b7bdb0d",
-      "Name": "LogFilePath",
-      "CanBeSearch": false,
-      "Code": "LogFilePath",
-      "IsShowedInList": false,
-      "IsVisibility": false,
-      "Length": 999,
-      "ListDataBinderTypeName": "Sungero.Presentation.CommonDataBinders.StringEditorToStringBinder",
-      "PreviousPropertyGuid": "7651b491-531f-4ddf-bc50-321aac3c7a20"
     }
   ],
   "PublicConstants": [
