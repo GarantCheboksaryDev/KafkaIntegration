@@ -234,7 +234,7 @@
           "TypeFullName": "global::System.String"
         },
         {
-          "Name": "GUID1C",
+          "Name": "ExternalLink",
           "IsNullable": true,
           "TypeFullName": "global::System.String"
         },
@@ -251,7 +251,7 @@
       "IsPublic": true,
       "Properties": [
         {
-          "Name": "Guid1C",
+          "Name": "ExternalLink",
           "IsNullable": true,
           "TypeFullName": "global::System.String"
         },

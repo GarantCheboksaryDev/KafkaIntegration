@@ -81,14 +81,14 @@ namespace vf.KafkaIntegration.Server
     /// <summary>
     /// Получить синхронизированный банк.
     /// </summary>
-    /// <param name="guid1C">Guid 1C.</param>
+    /// <param name="externalLink">Внешняя ссылка системы.</param>
     /// <param name="bic">БИК.</param>
     /// <param name="swift">SWIFT.</param>
     /// <param name="nonResident">Нерезидент.</param>
     /// <returns>Найденный банк, иначе новый.</returns>
-    public static Sungero.Parties.IBank GetSynchBank(string guid1C, string bic, string swift, bool nonResident)
+    public static Sungero.Parties.IBank GetSynchBank(string externalLink, string bic, string swift, bool nonResident)
     {
-      var findBank = Sungero.Parties.Banks.GetAll(x => x.ExternalId == guid1C
+      var findBank = Sungero.Parties.Banks.GetAll(x => x.ExternalId == externalLink
                                                   || (!nonResident && bic != string.Empty && bic != null && x.BIC == bic
                                                       || (nonResident && swift != string.Empty && swift != null && x.SWIFT == swift
                                                          )
@@ -101,13 +101,13 @@ namespace vf.KafkaIntegration.Server
     /// <summary>
     ///  Получить синхронизированную организацию.
     /// </summary>
-    /// <param name="guid1C">Guid 1C.</param>
+    /// <param name="externalLink">Внешняя ссылка системы.</param>
     /// <param name="tin">ИНН.</param>
     /// <param name="trrc">КПП.</param>
     /// <returns>Найденная организация, иначе новая.</returns>
-    public static Sungero.Parties.ICompany GetCompanySynch(string guid1C, string tin, string trrc)
+    public static Sungero.Parties.ICompany GetCompanySynch(string externalLink, string tin, string trrc)
     {
-      var findCompany = Sungero.Parties.Companies.GetAll(x => x.ExternalId == guid1C).FirstOrDefault();
+      var findCompany = Sungero.Parties.Companies.GetAll(x => x.ExternalId == externalLink).FirstOrDefault();
       if (findCompany == null)
         findCompany = Sungero.Parties.PublicFunctions.Counterparty.GetDuplicateCounterparties(tin, trrc, string.Empty, null, true)
           .Where(x => Sungero.Parties.Companies.Is(x)).Cast<Sungero.Parties.ICompany>()
@@ -119,12 +119,12 @@ namespace vf.KafkaIntegration.Server
     /// <summary>
     /// Получить синхронизированного физического лица.
     /// </summary>
-    /// <param name="guid1C">Guid 1C.</param>
+    /// <param name="externalLink">Внешняя ссылка системы.</param>
     /// <param name="tin">ИНН.</param>
     /// <returns>Найденное физическое лицо, иначе новое.</returns>
-    public static Sungero.Parties.IPerson GetPersonSynch(string guid1C, string tin)
+    public static Sungero.Parties.IPerson GetPersonSynch(string externalLink, string tin)
     {
-      var findPerson = GetPersonByGuid(guid1C);
+      var findPerson = GetPersonByGuid(externalLink);
       if (findPerson == null)
         findPerson = Sungero.Parties.PublicFunctions.Counterparty.GetDuplicateCounterparties(tin, string.Empty, string.Empty, null, true)
           .Where(x => Sungero.Parties.People.Is(x)).Cast<Sungero.Parties.IPerson>()
@@ -137,11 +137,11 @@ namespace vf.KafkaIntegration.Server
     /// <summary>
     /// Получить персону по Guid в 1С.
     /// </summary>
-    /// <param name="guid1C">Guid 1C.</param>
+    /// <param name="externalLink">Внешняя ссылка системы.</param>
     /// <returns>Найденная персона.</returns>
-    public static Sungero.Parties.IPerson GetPersonByGuid(string guid1C)
+    public static Sungero.Parties.IPerson GetPersonByGuid(string externalLink)
     {
-      return Sungero.Parties.People.GetAll(x => x.ExternalId != null && x.ExternalId != string.Empty && x.ExternalId == guid1C).FirstOrDefault();
+      return Sungero.Parties.People.GetAll(x => x.ExternalId != null && x.ExternalId != string.Empty && x.ExternalId == externalLink).FirstOrDefault();
     }
     
     /// <summary>
@@ -168,7 +168,7 @@ namespace vf.KafkaIntegration.Server
     /// <param name="queueItem">Запись справочника "Очереди сообщений".</param>
     public static void SetCounterpartyInfo(KafkaIntegration.Structures.Module.ICounterpartiesFromKafka counterpartyInfo, IKafkaQueueItem queueItem)
     {
-      var guid1C = !string.IsNullOrEmpty(counterpartyInfo.Guid1C) ? counterpartyInfo.Guid1C.Trim() : string.Empty;
+      var externalLink = !string.IsNullOrEmpty(counterpartyInfo.ExternalLink) ? counterpartyInfo.ExternalLink.Trim() : string.Empty;
       
       var common = !string.IsNullOrEmpty(counterpartyInfo.Common) ? counterpartyInfo.Common.Trim() : string.Empty;
       
@@ -217,22 +217,22 @@ namespace vf.KafkaIntegration.Server
       
       var isCompany = common != Constants.Module.SystemCodes.PersonReferenceName;
       
-      Functions.Module.WriteToLog(string.Format("Обработка объекта с гуидом: {0}.", guid1C), false);
+      Functions.Module.WriteToLog(string.Format("Обработка объекта с гуидом: {0}.", externalLink), false);
       
       if (isCompany)
       {
         #region Заполнить организацию
         
         // Выполнить поиск организаций.
-        var company = Functions.Module.GetCompanySynch(guid1C, tin, trrc);
+        var company = Functions.Module.GetCompanySynch(externalLink, tin, trrc);
         
         if (company.State.IsInserted)
-          Functions.Module.WriteToLog(string.Format("Организация с параметрами не найдена. Гуид 1С: {0}, ИНН: {1}, КПП: {2}.", guid1C, tin, trrc), false);
+          Functions.Module.WriteToLog(string.Format("Организация с параметрами не найдена. ИД: {0}, ИНН: {1}, КПП: {2}.", externalLink, tin, trrc), false);
         
         if (company.Nonresident != isNonResident)
           company.Nonresident = isNonResident;
-        if (company.ExternalId != guid1C)
-          company.ExternalId = guid1C;
+        if (company.ExternalId != externalLink)
+          company.ExternalId = externalLink;
         
         if (company.LegalName != longTextlnam)
           company.LegalName = longTextlnam;
@@ -291,7 +291,7 @@ namespace vf.KafkaIntegration.Server
           
           company.Save();
           
-          Functions.Module.WriteToLog(string.Format("Организация с параметрами успешно занесена. Гуид 1С: {0}, ИНН: {1}, КПП: {2}.", guid1C, tin, trrc), false);
+          Functions.Module.WriteToLog(string.Format("Организация с параметрами успешно занесена. ИД: {0}, ИНН: {1}, КПП: {2}.", externalLink, tin, trrc), false);
           
           if (!string.IsNullOrEmpty(queueItem.ErrorText))
             queueItem.ErrorText = string.Empty;
@@ -310,16 +310,16 @@ namespace vf.KafkaIntegration.Server
         #region Заполнить персоны
         
         // Выполнить поиск физ лица.
-        var person = Functions.Module.GetPersonSynch(guid1C, tin);
+        var person = Functions.Module.GetPersonSynch(externalLink, tin);
         
         if (person.State.IsInserted)
-          Functions.Module.WriteToLog(string.Format("Физ лицо с параметрами не найдено. Гуид 1С: {0}, ИНН: {1}.", guid1C, tin), false);
+          Functions.Module.WriteToLog(string.Format("Физ лицо с параметрами не найдено. ИД: {0}, ИНН: {1}.", externalLink, tin), false);
         
         if (person.Nonresident != isNonResident)
           person.Nonresident = isNonResident;
         
-        if (person.ExternalId != guid1C)
-          person.ExternalId = guid1C;
+        if (person.ExternalId != externalLink)
+          person.ExternalId = externalLink;
         
         var lastName = string.Empty;
         var firstName = string.Empty;
@@ -400,7 +400,7 @@ namespace vf.KafkaIntegration.Server
           
           person.Save();
           
-          Functions.Module.WriteToLog(string.Format("Физ лицо с параметрами успешно занесено. Гуид 1С: {0}, ИНН: {1}.", guid1C, tin), false);
+          Functions.Module.WriteToLog(string.Format("Физ лицо с параметрами успешно занесено. ИД: {0}, ИНН: {1}.", externalLink, tin), false);
           
           if (!string.IsNullOrEmpty(queueItem.ErrorText))
             queueItem.ErrorText = string.Empty;
@@ -423,7 +423,7 @@ namespace vf.KafkaIntegration.Server
     public static void SetBankInfo(KafkaIntegration.Structures.Module.IBanksFromKafka bankInfo, IKafkaQueueItem queueItem)
     {
       // Поиск банка.
-      var guid1C = !string.IsNullOrEmpty(bankInfo.GUID1C) ? bankInfo.GUID1C.Trim() : string.Empty;
+      var externalLink = !string.IsNullOrEmpty(bankInfo.ExternalLink) ? bankInfo.ExternalLink.Trim() : string.Empty;
       
       var swift = !string.IsNullOrEmpty(bankInfo.Swift_Code) ? bankInfo.Swift_Code.Trim() : string.Empty;
       
@@ -437,12 +437,12 @@ namespace vf.KafkaIntegration.Server
       
       if (!string.IsNullOrEmpty(swift) || !string.IsNullOrEmpty(bic))
       {
-        Functions.Module.WriteToLog(string.Format("Обработка объекта с гуидом: {0}.", guid1C), false);
+        Functions.Module.WriteToLog(string.Format("Обработка объекта с гуидом: {0}.", externalLink), false);
         
-        var bank = Functions.Module.GetSynchBank(guid1C, bic, swift, isNonResident);
+        var bank = Functions.Module.GetSynchBank(externalLink, bic, swift, isNonResident);
 
         if (bank.State.IsInserted)
-          Functions.Module.WriteToLog(string.Format("Банк с параметрами не найден. Гуид 1С: {0}, БИК: {1}, SWIFT: {2}.", guid1C, bic, swift), false);
+          Functions.Module.WriteToLog(string.Format("Банк с параметрами не найден. ИД: {0}, БИК: {1}, SWIFT: {2}.", externalLink, bic, swift), false);
         
         if (bank.Nonresident != isNonResident)
           bank.Nonresident = isNonResident;
@@ -456,8 +456,8 @@ namespace vf.KafkaIntegration.Server
         if (bank.SWIFT != swift)
           bank.SWIFT = bankInfo.Swift_Code;
         
-        if (bank.ExternalId != guid1C)
-          bank.ExternalId = guid1C;
+        if (bank.ExternalId != externalLink)
+          bank.ExternalId = externalLink;
         
         if (bank.LegalName != bankInfo.Bank_name)
           bank.LegalName = bankInfo.Bank_name;
@@ -489,7 +489,7 @@ namespace vf.KafkaIntegration.Server
             bank.Save();
           }
           
-          Functions.Module.WriteToLog(string.Format("Банк с параметрами успешно занесен. Гуид 1С: {0}, БИК: {1}, SWIFT: {2}.", guid1C, bic, swift), false);
+          Functions.Module.WriteToLog(string.Format("Банк с параметрами успешно занесен. ИД: {0}, БИК: {1}, SWIFT: {2}.", externalLink, bic, swift), false);
           
           if (!string.IsNullOrEmpty(queueItem.ErrorText))
             queueItem.ErrorText = string.Empty;

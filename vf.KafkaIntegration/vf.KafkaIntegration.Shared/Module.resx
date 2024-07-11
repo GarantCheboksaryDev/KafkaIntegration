@@ -65,12 +65,12 @@
     <value>Электронная почта превышает длину строки. {0}</value>
   </data>
   <data name="CounterpartiesAutoUploadFrom1C" xml:space="preserve">
-    <value>The counterparty is loaded automatically from 1C</value>
+    <value>Контрагент загружен автоматически из внешней системы</value>
   </data>
   <data name="BankAutoUploadFrom1C" xml:space="preserve">
-    <value>Банк загружен автоматически из 1С</value>
+    <value>Банк загружен автоматически из внешней системы</value>
   </data>
   <data name="NotSetMainPropertiesBank" xml:space="preserve">
-    <value>Не заполнены данные Гуид 1С, БИК, SWIFT.</value>
+    <value>Не заполнены данные Внешняя ссылка, БИК, SWIFT.</value>
   </data>
 </root>

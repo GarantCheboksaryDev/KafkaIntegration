@@ -37,9 +37,9 @@ namespace vf.KafkaIntegration.Structures.Module
     /// </summary>
     public string Bank_Branch { get; set; }
     /// <summary>
-    /// GUID 1C.
+    /// Внешняя ссылка системы.
     /// </summary>
-    public string GUID1C { get; set; }
+    public string ExternalLink { get; set; }
     /// <summary>
     /// Действующий / Закрытый.
     /// </summary>
@@ -53,9 +53,9 @@ namespace vf.KafkaIntegration.Structures.Module
   partial class CounterpartiesFromKafka
   {
     /// <summary>
-    /// Уникальный идентификатор банка в 1С.
+    /// Внешняя ссылка системы.
     /// </summary>
-    public string Guid1C { get; set; }
+    public string ExternalLink { get; set; }
     /// <summary>
     /// Признак контрагента.
     /// </summary>
