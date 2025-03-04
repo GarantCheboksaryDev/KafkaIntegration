@@ -2,7 +2,6 @@
   "$type": "Sungero.Metadata.EntityMetadata, Sungero.Metadata",
   "NameGuid": "4b08ed11-3b1a-4cba-8f94-929fc6da4b25",
   "Name": "KafkaQueueItem",
-  "AccessRightsMode": "NoRight",
   "BaseGuid": "4e09273f-8b3a-489e-814e-a4ebfbba3e6c",
   "CanBeNavigationPropertyType": true,
   "CreationAreaMetadata": {
@@ -193,7 +192,12 @@
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "KafkaIntegrationKafkaQueueItem",
+  "NonVisualAuthorizationMode": "FullAccess",
   "OperationsClass": "",
+  "Overridden": [
+    "AccessRightsMode",
+    "NonVisualAuthorizationMode"
+  ],
   "Properties": [
     {
       "$type": "Sungero.Metadata.EnumPropertyMetadata, Sungero.Metadata",
@@ -406,7 +410,7 @@
   "Versions": [
     {
       "Type": "EntityMetadata",
-      "Number": 12
+      "Number": 13
     }
   ]
 }
