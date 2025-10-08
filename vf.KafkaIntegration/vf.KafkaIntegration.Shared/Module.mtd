@@ -69,7 +69,6 @@
       "ItemId": "4b08ed11-3b1a-4cba-8f94-929fc6da4b25"
     }
   ],
-  "IconResourcesKeys": [],
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "vf.KafkaIntegration",
@@ -337,7 +336,7 @@
   "Versions": [
     {
       "Type": "ModuleMetadata",
-      "Number": 9
+      "Number": 11
     },
     {
       "Type": "DomainApi",

@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace vf.IntegrationSettings.Server
 {
-  public class ModuleFunctions
+  public partial class ModuleFunctions
   {
     /// <summary>
     /// Отправить сообщения с ошибками на обработку.

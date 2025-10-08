@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace vf.KafkaIntegration.Server
 {
-  public class ModuleJobs
+  public partial class ModuleJobs
   {
     /// <summary>
     /// Получить информацию о контрагентах.

@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace vf.IntegrationSettings.Shared
 {
-  public class ModuleFunctions
+  public partial class ModuleFunctions
   {
     /// <summary>
     /// Проверить вхождение текущего пользователя в роль Администраторы.

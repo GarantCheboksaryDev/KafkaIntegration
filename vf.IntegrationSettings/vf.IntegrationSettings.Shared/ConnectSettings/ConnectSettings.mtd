@@ -140,6 +140,7 @@
       ]
     }
   ],
+  "FormViewUuid": "9212fc07-94e2-4721-8d8e-f82840212439",
   "HandledEvents": [
     "BeforeSaveServer",
     "RefreshClient"

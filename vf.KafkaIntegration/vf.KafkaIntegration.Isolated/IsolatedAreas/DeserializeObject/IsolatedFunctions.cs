@@ -8,7 +8,7 @@ using vf.KafkaIntegration.Structures.Module;
 
 namespace vf.KafkaIntegration.Isolated.DeserializeObject
 {
-  public class IsolatedFunctions
+  public partial class IsolatedFunctions
   {
     /// <summary>
     /// Десериализовать Json с информацией о банке.

@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace vf.Integration.Server
 {
-  public class ModuleJobs
+  public partial class ModuleJobs
   {
 
   }

@@ -81,7 +81,6 @@
       "ItemId": "21b14af8-d7f4-46bf-b3f1-4d059f0e80a2"
     }
   ],
-  "IconResourcesKeys": [],
   "Importance": "Medium",
   "InterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "InterfaceNamespace": "vf.IntegrationSettings",
@@ -128,7 +127,7 @@
   "Versions": [
     {
       "Type": "ModuleMetadata",
-      "Number": 9
+      "Number": 11
     },
     {
       "Type": "DomainApi",

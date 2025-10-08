@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace vf.KafkaIntegration.Server
 {
-  public class ModuleFunctions
+  public partial class ModuleFunctions
   {
     /// <summary>
     /// Создать экземпляр подключения Kafka.

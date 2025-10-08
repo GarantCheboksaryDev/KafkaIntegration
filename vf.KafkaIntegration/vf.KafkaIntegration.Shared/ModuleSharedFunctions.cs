@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace vf.KafkaIntegration.Shared
 {
-  public class ModuleFunctions
+  public partial class ModuleFunctions
   {
     /// <summary>
     /// Проверить, является ли Id - Id директума.

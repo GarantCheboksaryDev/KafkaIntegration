@@ -186,6 +186,7 @@
       "Versions": []
     }
   ],
+  "FormViewUuid": "0225edec-016a-4d0e-b66c-b336633d564f",
   "HandledEvents": [
     "RefreshClient",
     "BeforeSaveServer"

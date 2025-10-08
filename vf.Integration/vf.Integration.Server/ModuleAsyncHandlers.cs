@@ -6,7 +6,7 @@ using Sungero.CoreEntities;
 
 namespace vf.Integration.Server
 {
-  public class ModuleAsyncHandlers
+  public partial class ModuleAsyncHandlers
   {
 
   }
