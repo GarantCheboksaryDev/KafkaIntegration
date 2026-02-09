@@ -193,6 +193,7 @@
   ],
   "IconResourcesKeys": [],
   "IntegrationServiceName": "KafkaIntegrationKafkaQueueItem",
+  "ListViewUuid": "52859246-a238-4ca9-bcb4-13d8b9a2d387",
   "NonVisualAuthorizationMode": "FullAccess",
   "OperationsClass": "",
   "Overridden": [
