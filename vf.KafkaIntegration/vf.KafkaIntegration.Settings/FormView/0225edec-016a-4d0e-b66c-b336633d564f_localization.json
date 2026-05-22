@@ -1,0 +1,12 @@
+{
+  "AdditionalGroup_Caption_fd45b6444500446e93fcaaf8fa9392ad": {
+    "en-US": "Json тела сообщения"
+  },
+  "Description": {},
+  "ErrorGroup_Caption_e67a787700b949f1b6df059cadf978e3": {
+    "en-US": "Текст ошибки"
+  },
+  "Name": {
+    "en-US": "Очередь сообщений Kafka"
+  }
+}
