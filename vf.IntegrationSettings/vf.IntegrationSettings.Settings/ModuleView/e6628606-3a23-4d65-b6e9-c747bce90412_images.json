@@ -1,0 +1,13 @@
+{
+  "$type": "System.Collections.Generic.List`1[[Sungero.NoCode.Settings.Models.SettingsLayerImage, Sungero.NoCode.Settings.Interfaces]], System.Private.CoreLib",
+  "$values": [
+    {
+      "$type": "Sungero.NoCode.Settings.Models.SettingsLayerImage, Sungero.NoCode.Settings.Interfaces",
+      "Name": "c387e053-039f-45ee-bff5-2cf582fb718b.png",
+      "Data": {
+        "$type": "System.Byte[], System.Private.CoreLib",
+        "$value": ""
+      }
+    }
+  ]
+}

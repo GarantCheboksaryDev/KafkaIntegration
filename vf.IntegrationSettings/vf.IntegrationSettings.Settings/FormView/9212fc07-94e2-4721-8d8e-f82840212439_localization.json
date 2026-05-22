@@ -1,0 +1,16 @@
+{
+  "ActionGroup_Caption_1dbccd29f5884d55a64d7d2cd051f549": {
+    "en-US": "Действия"
+  },
+  "AddSettingsGroup_Caption_c9d8d602319c45c19a694a5d78602c13": {
+    "en-US": "Дополнительные настройки"
+  },
+  "Description": {},
+  "MainPage_Title_5ec98c5379b64de2a8cbad794c5672a2": {
+    "en-US": "Properties",
+    "ru-RU": "Свойства"
+  },
+  "Name": {
+    "en-US": "Настройки подключения"
+  }
+}
