@@ -179,8 +179,8 @@
       ],
       "IsAncestorMetadata": true,
       "Overridden": [
-        "SettingsResourceKey",
         "Controls",
+        "SettingsResourceKey",
         "UseAncestorControls"
       ],
       "Versions": []
@@ -355,7 +355,7 @@
         {
           "Name": "messagesQueue",
           "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
-          "ParameterTypeFullName": "System.Linq.IQueryable"
+          "ParameterTypeFullName": "System.Linq.IQueryable`1[[vf.KafkaIntegration.IKafkaQueueItem, Sungero.Domain.Interfaces]]"
         }
       ],
       "ReturnType": "void",
@@ -367,7 +367,7 @@
         {
           "Name": "messagesQueue",
           "ParameterType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
-          "ParameterTypeFullName": "System.Linq.IQueryable"
+          "ParameterTypeFullName": "System.Linq.IQueryable`1[[vf.KafkaIntegration.IKafkaQueueItem, Sungero.Domain.Interfaces]]"
         }
       ],
       "ReturnType": "void",
@@ -383,7 +383,7 @@
         }
       ],
       "ReturnType": "global::System.Linq.IQueryable<global::vf.KafkaIntegration.IKafkaQueueItem>",
-      "ReturnTypeFullName": "System.Linq.IQueryable"
+      "ReturnTypeFullName": "System.Linq.IQueryable`1[[vf.KafkaIntegration.IKafkaQueueItem, Sungero.Domain.Interfaces]]"
     }
   ],
   "PublicStructures": [],
