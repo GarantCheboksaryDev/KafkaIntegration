@@ -152,9 +152,9 @@
   "ListViewUuid": "65f8ba24-142d-4b5e-a2cc-18b512fcf34f",
   "OperationsClass": "",
   "Overridden": [
-    "IsVisible",
     "HideFromCreationArea",
-    "HideFromNavigationEditorCreationArea"
+    "HideFromNavigationEditorCreationArea",
+    "IsVisible"
   ],
   "Properties": [
     {

@@ -32,9 +32,11 @@
   "IsolatedAssemblyName": "vf.Integration.Isolated",
   "IsolatedNamespace": "vf.Integration.Isolated",
   "OrderedSpecialFolders": [],
+  "OverrideSuffix": "vf",
   "PublicStructures": [],
   "ResourceInterfaceAssemblyName": "Sungero.Domain.Interfaces",
   "ResourceInterfaceNamespace": "vf.Integration",
+  "ResourcesKeys": [],
   "ServerAssemblyName": "vf.Integration.Server",
   "ServerNamespace": "vf.Integration.Server",
   "SharedAssemblyName": "vf.Integration.Shared",
@@ -45,7 +47,7 @@
   "Versions": [
     {
       "Type": "SolutionMetadata",
-      "Number": 12
+      "Number": 13
     },
     {
       "Type": "ModuleMetadata",
